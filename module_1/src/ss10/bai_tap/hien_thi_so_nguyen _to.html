@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+
+    let num = parseInt(prompt("Nhập n số nguyên tố đầu tiên cần in ra"));
+    let count = 0;
+    let i
+    let tongSoNguyenTo = 0
+    for (i = 2; i <= 1000; i++) {
+        if (tongSoNguyenTo < num) {
+            for (j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0)
+                    count += 1;
+            }
+            if (count == 0) {
+                document.write(i + "<br>")
+                tongSoNguyenTo += 1
+            }
+            count = 0
+        } else break;
+    }
+</script>
+</body>
+</html>

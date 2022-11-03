@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>XỔ SỐ VIETLOT</h1>
+<table style="background-color: aquamarine">
+    <tr>
+        <td><input type="number" id="num1"></td>
+        <td><input type="number" id="num2"></td>
+        <td><input type="number" id="num3"></td>
+        <td><input type="number" id="num4"></td>
+        <td><input type="number" id="num5"></td>
+        <td><input type="number" id="num6"></td>
+        <td>
+            <button onclick="quayNgauNhien()">Random</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6"></td>
+        <td>
+            <button id="buy" onclick="muaVe()">Mua</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="text" id="num11"></td>
+        <td><input type="text" id="num22"></td>
+        <td><input type="text" id="num33"></td>
+        <td><input type="text" id="num44"></td>
+        <td><input type="text" id="num55"></td>
+        <td><input type="text" id="num66"></td>
+    </tr>
+    <tr>
+        <td colspan="6">
+            <button id="check result" onclick="kiemTraKetQua()">Xem kết quả</button>
+        </td>
+    </tr>
+</table>
+<table border="1" style="background-color: #9794d9">
+    <tbody id="money"></tbody>
+</table>
+<h3>CÁC VÉ ĐÃ MUA: </h3>
+<div id="danhsachve"></div>
+<script>
+    class Ve {
+        constructor(s1, s2, s3, s4, s5, s6) {
+            this.s1 = s1;
+            this.s2 = s2;
+            this.s3 = s3;
+            this.s4 = s4;
+            this.s5 = s5;
+            this.s6 = s6;
+        }
+
+        getS1() {
+            return this.s1;
+        }
+
+        getS2() {
+            return this.s2;
+        }
+
+        getS3() {
+            return this.s3;
+        }
+
+        getS4() {
+            return this.s4;
+        }
+
+        getS5() {
+            return this.s5;
+        }
+
+        getS6() {
+            return this.s6;
+        }
+        giaiThuong(ve) {
+            if (this.s1 === ve.getS1()
+                && this.s2 === ve.getS2()
+                && this.s3 === ve.getS3()
+                && this.s4 === ve.getS4()
+                && this.s5 === ve.getS5()
+                && this.s6 === ve.getS6()) {
+                alert("Bạn đã trúng giải ba")
+            } else if (this.s2 === ve.getS2()
+                && this.s3 === ve.getS3()
+                && this.s4 === ve.getS4()
+                && this.s5 === ve.getS5()
+                && this.s6 === ve.getS6()) {
+
+            } else if (this.s4 === ve.getS4()
+                && this.s5 === ve.getS5()
+                && this.s6 === ve.getS6()) {
+                alert("Bạn đã trúng giải ba")
+
+            } else {
+                alert("Chúc bạn may mắn lần sau")
+            }
+        }
+    }
+
+    let ve = [];
+    let xoSo = "";
+
+    function muaVe() {
+        if (ve.length < 4) {
+            let s1 = +document.getElementById("num1").value;
+            let s2 = +document.getElementById("num2").value;
+            let s3 = +document.getElementById("num3").value;
+            let s4 = +document.getElementById("num4").value;
+            let s5 = +document.getElementById("num5").value;
+            let s6 = +document.getElementById("num6").value;
+            ve.push(new Ve(s1, s2, s3, s4, s5, s6));
+            xoSo += "<p>" + " " + s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s6 + "</p>"
+            document.getElementById("danhsachve").innerHTML = xoSo;
+        } else {
+            alert("bạn chỉ được mua tối đa 4 vé");
+        }
+    }
+    function quayNgauNhien() {
+        let s1 = document.getElementById("num1").value = Math.floor(Math.random() * 100);
+        let s2 = document.getElementById("num2").value = Math.floor(Math.random() * 100);
+        let s3 = document.getElementById("num3").value = Math.floor(Math.random() * 100);
+        let s4 = document.getElementById("num4").value = Math.floor(Math.random() * 100);
+        let s5 = document.getElementById("num5").value = Math.floor(Math.random() * 100);
+        let s6 = document.getElementById("num6").value = Math.floor(Math.random() * 100);
+    }
+    let result;
+
+    function kiemTraKetQua() {
+        let s1 = document.getElementById("num11").value = Math.floor(Math.random() * 100);
+        let s2 = document.getElementById("num22").value = Math.floor(Math.random() * 100);
+        let s3 = document.getElementById("num33").value = Math.floor(Math.random() * 100);
+        let s4 = document.getElementById("num44").value = Math.floor(Math.random() * 100);
+        let s5 = document.getElementById("num55").value = Math.floor(Math.random() * 100);
+        let s6 = document.getElementById("num66").value = Math.floor(Math.random() * 100);
+        result = new Ve(s1, s2, s3, s4, s5, s6);
+        for (let j = 0; j < ve.length; j++) {
+            result.giaiThuong(ve[j]);
+        }
+        ve.length = 0;
+    }
+
+    function quayNgauNhien() {
+        let s1 = document.getElementById("num1").value = Math.floor(Math.random() * 100);
+        let s2 = document.getElementById("num2").value = Math.floor(Math.random() * 100);
+        let s3 = document.getElementById("num3").value = Math.floor(Math.random() * 100);
+        let s4 = document.getElementById("num4").value = Math.floor(Math.random() * 100);
+        let s5 = document.getElementById("num5").value = Math.floor(Math.random() * 100);
+        let s6 = document.getElementById("num6").value = Math.floor(Math.random() * 100);
+
+    }
+</script>
+</body>
+</html>
+</body>
+</html>

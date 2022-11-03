@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let count = parseInt(prompt("Nhập số lượng phần tử  của mảng."));
+
+    for (let i = 0; i < count; i++) {
+        array[i] = parseInt(prompt("Nhập phần tử của mảng: "));
+    }
+
+    let check = true;
+    let dem = 0;
+
+    for (let i = 1; i < array.length; i++) {
+        if (array[0] > array[1]) {
+            check = false;
+            break;
+        } else dem = array[1] - array[0];
+        if (array[i] !== array[i - 1] + dem) {
+            check = false;
+            break;
+        }
+    }
+
+
+    if (check === true) {
+        document.write(array + " OK")
+    } else document.write(array + " NO")
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt("Nhập chiều dài mảng A")
+    let mang1= []
+    for (let i = 0; i <num ; i++) {
+        mang1[i]= +prompt("Nhập các phần tử ở vị trí "+i+" của mảng A")
+    }
+    let num1 = prompt("Nhập chiều dài mảng B");
+    let mang2 =[];
+
+    for (let i = 0; i < num1 ; i++) {
+        mang2[i]=+prompt("Nhập các phần tử ở vị trí "+i+"của mảng B")
+        while (mang2[i]==0){
+            mang2[i]= prompt("Mời bạn nhập lại")
+        }
+    }
+    let mang = [];
+    let index = " "
+    let result = "";
+    for (let i=0;i<mang.length;i++){
+              result = (mang[i]/mang1[i]);
+        mang2.push(result)
+          }
+    let max = mang2[0];
+    for (let i=0;i<mang2.length;i++){
+        if(mang2[i]>=max){
+         index = i;
+        }
+    }
+document.write("Số thập phân lớn nhất này ở vị trí:  "+index)
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = parseFloat(prompt("Mời bạn nhập số cần xuất"))
+    let a = 0
+    let b = 1
+    let i =0
+    let j
+    let total =1
+    while(i<=300){
+        j=a+b
+        i++;
+       if(i<num){
+        total+=j
+            a = b
+            b = j
+        }
+        else break;
+    } document.write(total)
+
+
+</script>
+</body>
+</html>

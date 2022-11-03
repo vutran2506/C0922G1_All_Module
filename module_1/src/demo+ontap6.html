@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    let count1=0;
+    let count2=0;
+    let num = prompt("Nhập chiều dài mảng")
+    while (num <=0) {
+        num = prompt("Mời bạn nhập lại, Chiều dài mảng phả lớn hơn 0")
+    }
+    for (let i = 0; i < num; i++) {
+        mang[i] = +prompt("Nhập phần tử tứ  " + i)
+    }
+    for (let i = 0; i < mang.length; i++) {
+        if (mang[i]%2===0) {
+            count1+=1
+        } else {
+            count2+=1
+        }
+    }
+    document.write("Số lượng số nguyên chẵn là:  "+count1+"<br>"+"Số lượng số nguyên chẵn là:  "+count2)
+</script>
+</body>
+</html>

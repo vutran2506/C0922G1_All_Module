@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số từ</title>
+</head>
+<body>
+<script>
+let nhapSoTu =prompt("Nhập chuỗi các từ");
+let mang = nhapSoTu.split(" ");
+let count =0;
+    for (i=0;i<mang.length;i++){
+        if(mang[i]!= ""){
+            count +=1
+        }
+    }document.write("Số từ trong chuỗi là:    "+count)
+</script>
+</body>
+</html>

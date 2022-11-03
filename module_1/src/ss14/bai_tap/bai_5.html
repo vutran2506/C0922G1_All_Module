@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gọi tên chòm sao ứng với ngôi sao</title>
+</head>
+<body>
+
+<script>
+    let ngoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let chomSao = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa", " Major", "Leo"];
+    let tenSao = prompt("Nhập tên ngôi sao");
+    let tenChomSao = goiSao(tenSao)
+    function goiSao(tenSao) {
+        let index = 0
+        for (i = 0; i < ngoiSao.length; i++) {
+            if (tenSao == ngoiSao[i]) {
+                index = i;
+            }
+        }
+        for (j = 0; j < chomSao.length; j++) {
+            if (index == j) {
+                result = chomSao[j]
+            }
+
+        }
+
+    }
+    document.write("Là chòm sao   "+result)
+</script>
+</body>
+</html>

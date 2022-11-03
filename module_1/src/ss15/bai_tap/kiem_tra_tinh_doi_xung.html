@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra tính đôi xứng</title>
+</head>
+<body>
+<script>
+    function kiemTraDoiXung(mang) {
+        let giaTri = true
+        for (i = 0; i < mang.length; i++) {
+            if (mang[i] != mang[mang.length - 1 - i])
+                giaTri = false;
+            break;
+        }
+        if (giaTri == true) {
+            alert("Mảng này đối xứng")
+        } else {
+            alert("Mảng này không đói xứng")
+        }
+    }
+
+    let chuoiKyTu = prompt("Nhập chuỗi ký tự")
+    let mang = chuoiKyTu.split("")
+    let kiemTra = kiemTraDoiXung(mang)
+</script>
+</body>
+</html>

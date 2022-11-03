@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh giai thừa</title>
+</head>
+<body>
+<script>
+
+    function tinhGiaiThua(num) {
+        let result=1
+for(i=1;i<=num;i++){
+   result *=i
+}  return result
+    }
+    let num =prompt("Nhập số cần tính")
+    let ketQua = tinhGiaiThua(num)
+    document.write(num+"  giai thừa bằng   "+ketQua)
+</script>
+</body>
+</html>

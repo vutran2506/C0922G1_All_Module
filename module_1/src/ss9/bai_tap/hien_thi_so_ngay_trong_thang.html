@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập tháng cần kiểm tra</p>
+<input type="number" id="sothang" placeholder="Nhập tháng cần kiểm tra">
+<button type="submit" onclick="kiemTra()">Kiểm Tra</button>
+<script>
+    function kiemTra() {
+let nhapSoThang =parseInt(document.getElementById('sothang').value);
+switch (nhapSoThang) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        alert('Tháng  '+nhapSoThang + '   tháng có 31 ngày');
+        break;
+    case 2:
+        alert('Tháng    '+nhapSoThang + '   có 28 hoặc 29 ngày');
+        break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        alert('Tháng    '+nhapSoThang + "   có 30 ngày");
+        break;
+    default:
+        alert('Nhập sai tháng')
+
+}
+    }
+</script>
+</body>
+</html>

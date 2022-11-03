@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+      let diemKiemTra = parseFloat(prompt("nhập điểm tra"));
+      let diemGiuaKy = parseFloat(prompt("nhập điểm giữa kỳ"));
+      let diemCuoiKy = parseFloat(prompt("nhập điểm cuối kỳ"));
+      let diemTrungBinh = (diemKiemTra+2*diemGiuaKy+3*diemCuoiKy)/6
+     if ( diemTrungBinh >= 8) {
+         alert("học lực giỏi")
+      } else if(diemTrungBinh >= 6.5){
+         alert("học lục khá")
+     } else if( diemTrungBinh >= 5){
+         alert("học lực trung bình ")
+     }else{
+         alert("học lực yếu")
+     }
+</script>
+</body>
+</html>

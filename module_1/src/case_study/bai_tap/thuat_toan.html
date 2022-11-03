@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = prompt("Nhập phần tử mảng").split("");
+    let mang1 = [];
+    let count = 0;
+    for (let i = 0; i < mang.length; i++) {
+        if (mang1.indexOf(mang[i]) == -1) {
+            mang1.push(mang[i])
+        }
+    }
+    let mang2 = []
+    for (let i = 0; i < mang1.length; i++) {
+        for (let j = 0; j < mang.length; j++) {
+            if (mang1[i]==mang[j]) {
+                count++
+            }
+        }
+        mang2.push(count);
+        count = 0;
+    }
+    let ketQua =true;
+    for (let i = 0; i <mang2.length ; i++) {
+        for (let j = 1; j <mang2.length ; j++) {
+            if(mang2[i]!==mang2[j]){
+                ketQua = false;
+                break;
+        }
+        }
+    }document.write(ketQua)
+
+</script>
+</body>
+</html>

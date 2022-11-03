@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình tìm xem V có nằm trong mảng số nguyên không? Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".</title>
+</head>
+<body>
+<script>
+    let chieuDaiMang = prompt("Nhập chièu dài của mãng");
+    let mang = [];
+    for (i = 0; i < chieuDaiMang; i++) {
+        mang[i] = prompt("nhập phần tử của mảng a [" + i + "]");
+    }
+
+    let phanTuV = prompt("nhập phần tử V")
+    for (i = 0; i < chieuDaiMang; i++) {
+        if ( phanTuV == mang[i]) {
+            document.write("V is in the array")
+            document.write("<br>")
+        } else
+            document.write("V is  not in the array")
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>

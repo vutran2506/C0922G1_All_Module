@@ -1,0 +1,30 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải thuật 3</title>
+</head>
+<body>
+<script>
+    function commonCharacterCount(arr1, arr2) {
+        array1 = arr1.split("");
+        array2 = arr2.split("");
+        let count = 0;
+
+        for (let i = 0; i < array1.length; i++) {
+            for (let j = 0; j < array2.length; j++) {
+                if (array1[i] == array2[j]) {
+                    count+=1;
+                    array1.splice(i, 1);
+                }
+            }
+        }
+        alert(count);
+    }
+
+    let arr1 = prompt("Enter a array1");
+    let arr2 = prompt("Enter a array2");
+    commonCharacterCount(arr1, arr2);
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra ký tự truyền vào mảng</title>
+</head>
+<body>
+<script>
+function kiemTraKyTu(mang) {
+    let count = 0
+for(i=0;i<mang.length;i++){
+    if(num == mang[i]){
+        count++;
+    }
+} if (count == 0){
+    document.write("-1")
+} else {
+        document.write(num+"  xuất hiện "+count+ "  lần")
+    }
+}
+let chuoiKyTu = prompt("Nhập chuỗi ký tự")
+    let mang =chuoiKyTu.split("")
+    let num = prompt("Nhập ký tự cần truyền vào")
+    let ketQua = kiemTraKyTu(mang)
+</script>
+</body>
+</html>

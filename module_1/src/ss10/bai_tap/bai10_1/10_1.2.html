@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapNhietDo =parseFloat(prompt("Nhập nhiệt độ của bạn"));
+    while (nhapNhietDo < 20 || nhapNhietDo >100 ){
+        if(nhapNhietDo <20)
+            alert("Bạn cần tăng nhiệt độ")
+        nhapNhietDo = prompt("Mời bạn nhập lại")
+        if(nhapNhietDo>100)
+            alert("bạn cần giảm nhiệt độ")
+        nhapNhietDo =prompt("Mời bạn nhập lại nhiệt độ")
+    }
+    alert("Nhiệt độ cho phép")
+</script>
+</body>
+</html>

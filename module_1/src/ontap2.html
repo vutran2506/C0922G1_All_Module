@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x= +prompt("nhập canh1");
+    let y = +prompt("nhập cạnh 2");
+    let z = +prompt("nhập cạnh 3")
+    function kiemTraBaCanh(x,y,z) {
+if(x+y<=z || y+z<=x || z+x<=y){
+    alert("đây không phải là 3 cạnh của tam giác")
+}else if((x*x+y*y)===(z*z)|| (x*x+z*z)===(y*y) || (y*y+z*z)===(x*x)){
+    alert("Đây là tam giác vuông")
+} else {
+    alert("đây là 1 tam giác")
+}
+    }
+    kiemTraBaCanh(x,y,z)
+</script>
+</body>
+</html>

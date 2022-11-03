@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10</title>
+</head>
+<body>
+<script>
+    let mang = []
+    let b =""
+    let num = prompt("Nhập độ dài của mảng")
+    for (i = 0; i < num; i++) {
+        mang[i] = prompt("Nhập các phần tử của mảng a [" + i + "]")
+    }
+    for (let i = 0; i < num; i++) {
+        if (mang[i] >= 10) {
+            b = mang [ i]
+            document.write(b+"ở vị trí"+i+"<br>")
+        }
+    }
+
+</script>
+</body>
+</html>

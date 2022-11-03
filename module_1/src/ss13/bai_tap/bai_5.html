@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So sanhs hai mang</title>
+</head>
+<body>
+<script>
+    let chuoiKyTu1 = prompt("Nhập chuỗi 1")
+    let mang1 = chuoiKyTu1.split("")
+    let chuoiKyTu2 = prompt("Nhập chuỗi 2")
+    let mang2 = chuoiKyTu2.split("")
+    let result ;
+   if (mang2.length != mang1.length) {
+      result = '2 mảng không giống nhau'
+   } else {
+       for (i= 0; i< mang2.length;i++) {
+           if (mang1[i] != mang2[i]) {
+               result = '2 mảng không giống nhau' ;
+               break ;
+           } else {
+               result =' 2 mảng giống nhau'
+
+           }
+       }
+   }
+   document.write(result) ;
+</script>
+</body>
+</html>

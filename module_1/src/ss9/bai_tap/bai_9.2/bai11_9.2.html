@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soTien = prompt("Nhập số tiền thu nhập")
+    let tienThue
+    if( soTien<0){
+        alert ("Kiểm tra lại số tiền nhập vào")
+    } else if(soTien<10000000) {
+        alert("Không cần đóng thuế TNCN")
+    } else if(soTien<18000000) {
+        tienThue = soTien*0.1
+        alert(" Số thuế cần phải nộp là:  "+tienThue+" vnd")
+    } else if (soTien<32000000) {
+        tienThue= soTien*0.15
+        alert(" Số thuế cần phải nộp là:  "+tienThue+" vnd")
+    } else if( soTien<52000000) {
+        tienThue = soTien*0.2
+        alert(" Số thuế cần phải nộp là:  "+tienThue+" vnd")
+    }else if(soTien<84000000) {
+        tienThue = soTien*0.25
+    }else
+        tienThue = soTien*0.3
+    alert(" Số thuế cần phải nộp là:  "+tienThue+" vnd")
+
+</script>
+</body>
+</html>

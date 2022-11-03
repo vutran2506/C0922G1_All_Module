@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table >
+    <tr>
+        <th>Menu Món</th>
+    </tr>
+</table>
+<table style="background-color: darksalmon">
+    <tbody id="danhsachmon">
+
+    </tbody>
+
+</table>
+<tr>
+    <td>7</td>
+    <td>
+        <button type="submit" onclick="exit()">Thoát Gọi Món</button>
+    </td>
+</tr>
+
+<script>
+    let danhSach = ["Cà phê", "Cam Vắt", "Nước Ép Cà Rốt", "Nước Ép Cà chua", "Nước Lọc", "Nước Dừa"]
+    let giaTien = [12000, 20000, 20000, 20000, 8000, 25000]
+    let conten = ""
+    for (let i = 0; i < danhSach.length; i++) {
+        conten += '<tr>\n' +
+            '    <td>' + (i + 1) + '</td>\n' +
+            '    <td><button type="button" onclick="chon('+i+')"> ' + danhSach[i] + ' </button></td>\n' +
+            '</tr>'
+    }
+    document.getElementById("danhsachmon").innerHTML = conten
+    let tongSoTien = 0;
+    let soMon = ""
+        function chon(i) {
+            let soTien = ""
+            let soLuong = parseInt(prompt(danhSach[i]  + " có giá tiền là:  " + giaTien[i]+ " VND "+"  Mời bạn nhập số lượng cần mua :  "))
+            soTien = soLuong * giaTien[i]
+            alert("Tổng số tiền phải trả là:   "+soTien+" VND")
+            tongSoTien += soLuong * giaTien[i];
+            soMon += soLuong + " " + danhSach[i]+"  "
+        }
+    function exit() {
+        alert("Bạn đã gọi  " + soMon + "  tổng số tiền phải trả là:   " + tongSoTien + " VND")
+    }
+
+
+</script>
+
+
+</body>
+</html>

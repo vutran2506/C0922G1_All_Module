@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó</title>
+</head>
+<body>
+<script>
+    let chieuDaiMang = prompt("Nhập chièu dài của mãng");
+    let mang = [];
+    for (i = 0; i < chieuDaiMang; i++) {
+        mang[i] = prompt("nhập phần tử của mảng a [" + i + "]");
+    }
+    let viTRiDau = 0;
+    let viTriCuoi = chieuDaiMang - 1;
+    debugger
+  while (viTRiDau<viTriCuoi){
+        let b = mang[viTRiDau]
+        mang[viTRiDau] = mang[viTriCuoi]
+      mang[viTriCuoi] = b
+        viTRiDau++
+        viTriCuoi--
+    }
+    document.write(mang)
+</script>
+</body>
+</html>

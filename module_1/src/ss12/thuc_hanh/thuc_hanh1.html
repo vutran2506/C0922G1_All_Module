@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="ogiatri">
+<button type="button" onclick="Add()">Add</button>
+<button type="button" onclick="Display()">Display</button>
+<p id="result"></p>
+<script>
+    let x = 0;
+    let a = Array();
+    function Add() {
+        a[x] = document.getElementById("ogiatri").value;
+        alert(a[x] + "được gán với giá tri " + x);
+        x++;
+        document.getElementById("ogiatri").value="";
+    }
+
+    function Display() {
+        let e = "<hr/>"
+        for (let i = 0; i < a.length; i++) {
+            e += i + "=" + a[i] + "<br>";
+        }
+        document.getElementById("result").innerHTML = e;
+    }
+</script>
+</body>
+</html>

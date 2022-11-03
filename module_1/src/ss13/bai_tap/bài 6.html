@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thay dấu "-" thành dấu "-" </title>
+</head>
+<body>
+<script>
+    let chuoiKyTu =prompt("Nhập chuỗi ký tự");
+    let mang = chuoiKyTu.split("");
+    for(i=0;i<mang.length;i++){
+        if(mang[i]=="-"){
+            mang[i]="_"
+        }
+    }
+    let y = mang.join('');
+    document.write(y)
+</script>
+</body>
+</html>

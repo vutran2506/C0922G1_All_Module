@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<div class="button">
+    <button class="button" onclick="inputOperand(1)">1</button>
+    <button class="button" onclick="inputOperand(2)">2</button>
+    <button class="button" onclick="inputOperand(3)">3</button>
+    <button class="button" onclick="inputOperand(+)">+</button>
+</div>
+    <div class="button">
+        <button class="button" onclick="inputOperand(4)">4</button>
+        <button class="button" onclick="inputOperand(5)">5</button>
+        <button class="button" onclick="inputOperand(6)">6</button>
+        <button class="button" onclick="inputOperand(-)">-</button>
+    </div>
+    <div class="button">
+        <button class="button" onclick="inputOperand(7)">7</button>
+        <button class="button" onclick="inputOperand(8)">8</button>
+        <button class="button" onclick="inputOperand(9)">9</button>
+        <button class="button" onclick="inputOperand(*)">*</button>
+    </div>
+    <div class="button">
+        <button class="button" onclick="inputOperand(0)">0</button>
+        <button class="button" onclick="clear()">C</button>
+        <button class="button" onclick="inputOperand(/)">/</button>
+        <button class="button" onclick="calculate()">=</button>
+    </div>
+</div>
+    <script>
+        let operand1,operand2,opt
+        function inputOperand(num){
+            if(opt){
+                operand2 = num
+            }else {
+                operand1 = num
+            }
+        }
+        function inputOperand(operator){
+            opt = operator
+        }
+
+        function clear() {
+            operand1 = undefined;
+            operand1 = undefined;
+            opt = undefined;
+        }
+        function calculate(){
+            switch (opt) {
+                let result;
+                    result
+                case"+":
+                    result = operand1 + operand2
+                    break;
+                case "-":
+                    result = operand1 - operand2
+                    break;
+                case "*":
+                    result = operand1 * operand2
+                    break;
+                case"/":
+                    result = operand1 / operand2
+                    break;
+            }
+            alert('${operand1} ${opt} ${operand2}');
+        }
+    </script>
+</table>
+</body>
+</html>

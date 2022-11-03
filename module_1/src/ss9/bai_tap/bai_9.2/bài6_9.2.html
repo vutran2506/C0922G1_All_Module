@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><b>Phương trình bậc nhất</b></p>
+<p>ax+b=0</p>
+<p>Giá tri a</p>
+<input type="text" id="giatria">
+<p>Giá trị b</p>
+<input type="text" id="giatrib">
+<p> Giá trị của x là:</p>
+<input type="text" id="ketqua">
+<button type="submit"  onclick="ketQua()" >KẾT QUẢ</button>
+<script>
+    function ketQua() {
+let giaTriA = parseFloat(document.getElementById("giatria").value);
+let giaTriB =parseFloat(document.getElementById("giatrib").value);
+let result = giaTriB/giaTriA
+    document.getElementById("ketqua").value = result
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<script>-->
+<!--    function timSoNguyenTo(number) {-->
+<!--        let kiemTra = false;-->
+<!--        for (let i = 2; i <= Math.sqrt(number); i++) {-->
+<!--            if (number % i == 0) {-->
+<!--                kiemTra = true;-->
+<!--                return kiemTra;-->
+<!--            }-->
+<!--        }-->
+<!--        return kiemTra-->
+<!--    }-->
+<!--    let gan-->
+<!--    let num =prompt("nhập")-->
+<!--    for (let i = 2; i < num; i++) {-->
+<!--        gan = timSoNguyenTo(i);-->
+<!--        if (gan == false) {-->
+<!--            document.write(i+" là số nguyên tôs <br>")-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = 2;
+    let count = 0;
+    let isPrime = true;
+    while (count <10) {
+        isPrime = true;
+        for(let i =2; i<=Math.sqrt(num); i++) {
+            if(num%i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if(isPrime == true) {
+            document.writeln(num+" là số nguyên tố <br>");
+            count++;
+        }
+        num++;
+    }
+</script>
+</body>
+</html>

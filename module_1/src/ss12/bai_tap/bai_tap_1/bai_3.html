@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng</title>
+</head>
+<body>
+<script>
+    let mang =[];
+    let num = prompt("Nhập chiều dài của mảng");
+    let max =0
+    let total = 0
+    index =0
+    for(let i=0;i<num;i++){
+        mang [i] =parseInt(prompt("Nhập các phần tử mảng a["+i+"]"));
+    }
+
+    for ( let i=0;i<num;i++){
+        if( mang[i]> max){
+            max = mang [i]
+            index =i
+
+        }
+    }document.write("giá trị max là  "+max+"ở vị trí"+index)
+
+
+    for( let i =0;i<num;i++){
+        total += mang[i]
+    }
+    document.write("<br> tổng là    "+total)
+</script>
+</body>
+</html>

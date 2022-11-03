@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Phương trình bậc 2 có dạng</p>
+<p> ax^2 bx +c =0</p>
+<p>Nhập giá trị a</p>
+<input type="text" id="giatria">
+<p> Nhập giá trị b </p>
+<input type="text" id="giatrib">
+<p>Nhập giá trị c</p>
+<input type="text" id="giatric">
+<p>Giá trị x là:</p>
+<input type="text" id="giatrix">
+<button type="submit" onclick="Tinh()">KẾT QUẢ</button>
+<script>
+    function Tinh() {
+        let giaTriA = parseInt(document.getElementById("giatria").value);
+        let giaTriB = parseInt(document.getElementById("giatrib").value);
+        let giaTriC = parseInt(document.getElementById("giatric").value);
+        let result1;
+        let result2;
+        let result;
+        let delTa = giaTriB * giaTriB - 4 * giaTriA * giaTriC
+        if (giaTriA == 0) {
+            result = -giaTriC / giaTriB
+            document.getElementById("giatrix").value = result
+        } else if (delTa == 0) {
+            result = -giaTriB / (2 * giaTriA)
+            document.getElementById("giatrix").value = result
+        } else if (delTa > 0) {
+            result1 = (-giaTriB - Math.sqrt(delTa)) / (2 * giaTriA);
+            document.getElementById("giatrix").value = result1
+            result2 = (-giaTriB + Math.sqrt(delTa)) / (2 * giaTriA);
+            document.getElementById("giatrix").value = result2
+        } else
+            result = "Phương trinh vô nghiệm"
+        document.getElementById("giatrix").value = result
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function kiemTraDoiXung(chuoi) {
+        let mang = chuoi.split("");
+
+        let kiemTra = true;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] !== mang[mang.length - 1 - i]) {
+                kiemTra = false;
+                break;
+            }
+        }
+        if (kiemTra) {
+            alert("mảng này đối xứng")
+        } else {
+            alert("mảng này không đối xứng")
+        }
+    }
+
+    let chuoi = prompt("Nhập một chuỗi")
+    kiemTraDoiXung(chuoi)
+</script>
+</body>
+</html>

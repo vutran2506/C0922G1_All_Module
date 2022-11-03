@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function tinhTong(mang) {
+        let result = 0;
+        for (let i = 0; i < mang.length; i++) {
+            for (let j = 0; j < mang[i].length; j++) {
+                if (mang[i][j] % 2 === 0) {
+                    result += mang[i][j];
+                }
+            }
+        }
+        return document.write("Tổng các số chẵn trong mãng 2 chiều là:   " + result);
+    }
+
+    let num1 = prompt("Nhập chiều dài mảng 1")
+    let mang1 = [];
+    for (let i = 0; i < num1; i++) {
+        mang1[i] = +prompt("Nhập phần tử mảng1 ");
+    }
+    let num2 = prompt("Nhập chiều dài mảng 2")
+    let mang2 = [];
+    for (let i = 0; i < num2; i++) {
+        mang2[i] = +prompt("Nhập phần tử mảng 2");
+    }
+    let mang = [mang1, mang2];
+    tinhTong(mang)
+</script>
+</body>
+</html>

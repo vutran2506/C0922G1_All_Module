@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    let mang1 = [];
+    let mang2 = [];
+    let num = prompt("Nhập chiều dài mảng")
+    while (num % 2 !== 0) {
+        num = prompt("Mời bạn nhập lại chiều dài mảng là số chẵn")
+    }
+    for (let i = 0; i < num; i++) {
+        mang[i] = +prompt("Nhập phần tử tứ  " + i)
+    }
+    for (let i = 0; i < mang.length; i++) {
+        if (i < mang.length / 2) {
+            mang1.push(mang[i])
+        } else {
+            mang2.push(mang[i])
+        }
+    }
+    alert("Các phần tử mảng 1 là:  "+mang1)
+    alert("Các phần tử mảng 2 là:  "+mang2)
+</script>
+</body>
+</html>

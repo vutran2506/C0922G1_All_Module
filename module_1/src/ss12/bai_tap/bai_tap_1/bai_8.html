@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let a = [];
+    count = 0;
+    while (a.length <10){
+        x = window.prompt("Nhập vào phần tử số nguyên: ");
+        a.push(x)
+    }
+    console.log(a)
+
+    a.sort( compareNumbers)
+    function compareNumbers(a, b) {
+        return b - a;
+    }
+    alert(a)
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang =  [];
+let sum =0 ;
+let count =0;
+    for (let i = 0; i <10 ; i++) {
+        let num = +prompt("Nhập phần tử thứ"+i);
+        mang.push(num);
+    }
+    for (let i = 0; i <mang.length ; i++) {
+        if(mang[i]%5===0 && i%3===0){
+            sum += mang[i]
+            count++
+        }
+    }
+    document.write(sum/count)
+</script>
+</body>
+</html>

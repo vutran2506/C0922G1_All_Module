@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script>
+    function xuatDayFibonaci(n) {
+        let a = 0;
+        let b = 1;
+        let c = 0;
+        if (n === a || n === b) {
+            return true
+        }
+        while (n > a || n > b) {
+            c = a + b;
+            if (n === c) ;
+            return true;
+            a = b;
+            b = c;
+        }
+        return false
+    }
+
+    let num = prompt("Nhập chiều dài của mảng");
+    let mang = [];
+    for (let i = 0; i < num; i++) {
+        mang[i] = prompt("Nhập phần tử ở vị trí " + i)
+    }
+
+    function xuatMangFibonaci(mang) {
+        let mang1 = [];
+        for (let i = 0; i < mang.length; i++) {
+            if (xuatDayFibonaci(mang[i])) {
+                mang1.push(mang[i])
+            }
+        }
+
+        function sapXep(a, b) {
+            return a - b
+        }
+
+        return document.write(mang1.sort(sapXep))
+    }
+
+    xuatMangFibonaci(mang)
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi = prompt("Nhập xâu ký tự");
+    document.write("Xâu ký tự trước khi chuẩn hoá: " + "<pre>"  + chuoi + "</pre>" + "<br>")
+    let mang = chuoi.toLowerCase().split(" ");
+    for (let i = 0; i < mang.length; i++) {
+        if (mang[i] != "") {
+            mang[i] = mang[i][0].toUpperCase() + mang[i].slice(1);
+        }
+    }
+    document.write(" Xâu ký tự sau khi chuẩn hoá:     " + mang.join(" ") + "<br>");
+    let max = 0
+    let a = ""
+    for (let i = 0; i < mang.length; i++) {
+        if (mang[i].length > max) {
+            max = mang[i].length
+            a = mang[i]
+        }
+    }
+    document.write("Từ dài nhất là:  " + a)
+</script>
+</body>
+</html>

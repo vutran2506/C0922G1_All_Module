@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi chỗ 2 số</title>
+</head>
+<body>
+<script>
+    function doiViTri(num1, num2) {
+        let a = num1
+        num1 = num2
+        num2 = a
+        document.write(num1+"   "+ num2)
+    }
+
+    let num1 = parseInt(prompt("Nhập số thứ nhất"))
+    let num2 = parseInt(prompt("Nhật số thứ 2"))
+    let ketQua = doiViTri(num1, num2)
+</script>
+</body>
+</html>

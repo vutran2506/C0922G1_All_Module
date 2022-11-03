@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Nhập năm cần kiểm tra</h1>
+<input type="number" id="year">
+
+<button onclick="kiemTra()">Kiểm Tra</button>
+<script>
+ function kiemTra(){
+     let year = parseInt(document.getElementById("year").value)
+     if(year % 4 == 0) {
+         if( year % 100 == 0) {
+             if( year % 400 == 0) {
+                 alert(year + "    i a laep year")
+             } else {
+                 alert( year + "    i not a laep year")
+             }
+         }else {
+             alert(year +  "    i a leap year")
+         }
+     }else {
+         alert( year + '    i not a leap year')
+     }
+ }
+</script>
+</body>
+</html>

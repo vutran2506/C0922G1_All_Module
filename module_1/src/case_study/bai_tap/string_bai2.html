@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let num = prompt("nhập chuỗi ký tự");
+let mang =num.split("");
+let mang1=[];
+for (let i = 0; i < mang.length ; i++) {
+    if(mang1.indexOf(mang[i])===-1){
+        mang1.push(mang[i])
+    }
+
+}document.write(mang1.length)
+</script>
+</body>
+</html>

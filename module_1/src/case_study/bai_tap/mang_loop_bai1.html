@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let num = prompt("Nhập chiều dài của mảng");
+    let mang =[]
+    for (let i = 0; i < num ; i++) {
+          mang[i]= +prompt("Nhập phần tử thứ "+i+" của mảng: ")
+    }
+        let mang1 =[];
+    let sum =0;
+        for (i=0;i<mang.length;i++){
+    sum += mang[i]
+            mang1.push(sum)
+        } document.write(mang1)
+</script>
+</body>
+</html>

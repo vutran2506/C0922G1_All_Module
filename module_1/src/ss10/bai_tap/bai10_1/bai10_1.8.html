@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="doanSo()">Kiểm Tra</button>
+<script>
+    function doanSo() {
+        let nhapKhoanDoanTren = parseInt(prompt("Mời bạn nhập khoản đoán trên"))
+        let nhapKhoanDoanDuoi = parseInt(prompt("Mời bạn nhập khoản đoán dưới"))
+        let numberSoDoan = parseInt(prompt("Mời bạn nhập số đoán"))
+        let munberRan = Math.floor( Math.random() * (nhapKhoanDoanTren- nhapKhoanDoanDuoi) + nhapKhoanDoanDuoi )
+        let soLanDoan = 0
+        let i
+        while (numberSoDoan != munberRan) {
+
+            soLanDoan += 1;
+            if (soLanDoan == 4) {
+                alert("Bạn đã hết số lần đoán");
+                break;
+            }
+            if (numberSoDoan < munberRan) {
+                alert("Số bạn đoán nhỏ hơn")
+            } else alert(" Số bạn đoán lơn hơn");
+            numberSoDoan = parseInt(prompt("Mời bạn nhập số đoán"))
+        }
+            if (numberSoDoan == munberRan) {
+                alert("chúc mừng bạn đã đoán đúng")
+            }
+
+    }
+</script>
+</body>
+</html>

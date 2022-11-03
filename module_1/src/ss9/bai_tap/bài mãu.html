@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="view" ><br><br>
+<div>
+    <table border="1" cellpadding="9px" cellspacing="0.1">
+        <tr>
+            <td><button type="button" value ="1" onclick="inputValue(value)"> 1 </button></td>
+            <td><button type="button" value ="2" onclick="inputValue(value)"> 2 </button></td>
+            <td><button type="button" value ="3"  onclick="inputValue(value)"> 3 </button></td>
+            <td><button type="button" value ="+" onclick="inputValue(value)"> + </button></td>
+        </tr>
+
+        <tr>
+            <td><button type="button" value ="4" onclick="inputValue(value)"> 4 </button></td>
+            <td><button type="button" value ="5" onclick="inputValue(value)"> 5 </button></td>
+            <td><button type="button" value ="6" onclick="inputValue(value)"> 6 </button></td>
+            <td><button type="button" value ="-" onclick="inputValue(value)"> - </button></td>
+        </tr>
+        <tr>
+            <td><button type="button" value ="7" onclick="inputValue(value)"> 7 </button></td>
+            <td><button type="button" value ="8" onclick="inputValue(value)"> 8 </button></td>
+            <td><button type="button" value ="9" onclick="inputValue(value)"> 9</button></td>
+            <td><button type="button" value ="*" onclick="inputValue(value)"> * </button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="xoa()"> C </button></td>
+            <td><button type="button" value ="0" onclick="inputValue(value)"> 0 </button></td>
+            <td><button type="button" onclick="result()"> = </button></td>
+            <td><button type="button" value ="/" onclick="inputValue(value)"> / </button></td>
+        </tr>
+    </table>
+
+</div>
+<script>
+     let view = document.getElementById("view");
+     function inputValue(value) {
+           view.value += value;
+    }
+      function result() {
+          let result = eval(view.value)
+         view.value = result;
+       }
+     function xoa() {
+         view.value="";
+     }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.</title>
+</head>
+<body>
+<script>
+    let mang =[];
+    let num = prompt("Nhập chiều dài của mảng");
+    let max =0
+    let index
+    for(let i=0;i<num;i++){
+        mang [i] =prompt("Nhập các phần tử mảng a["+i+"]");
+    }
+
+    for ( let i=0;i<num;i++){
+        if( mang[i]> max){
+            max = mang [i]
+            index =i
+        }
+   }document.write("giá trị lớn nhất là:  "+max+ "ở vị trí "+index)
+</script>
+</body>
+</html>

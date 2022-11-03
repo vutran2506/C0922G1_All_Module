@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chieuDaiMang = prompt("Nhập chièu dài của mãng");
+    let mang = [];
+    for (i = 0; i < chieuDaiMang; i++) {
+        mang[i] = prompt("nhập phần tử của mảng a [" + i + "]");
+    }
+    var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result= ""
+    for(var i=0; i<mang.length; i++)
+    {
+        if(UPPER.indexOf(mang[i]) !== -1)
+        {
+            result+=(mang[i].toLowerCase());
+        }
+        else if(LOWER.indexOf(mang[i]) !== -1)
+        {
+            result+=(mang[i].toUpperCase());
+        }
+    }
+ document.write(result)
+</script>
+</body>
+</html>

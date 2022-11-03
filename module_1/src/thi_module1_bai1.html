@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let num = prompt("Nhập chiều dài của mảng");
+    while (num > 20) {
+        num = prompt("Số lượng phần tử lớn hơn 20.Mời bạn nhập lại")
+    }
+    let mang = [];
+    let mang1 = [];
+    let count = 0;
+
+    for (let i = 0; i < num; i++) {
+        mang[i] = prompt("Nhập phần tử ở vị trí: " + i)
+    }
+    for (let i = 0; i < mang.length; i++) {
+        if (mang1.indexOf(mang[i]) === -1) {
+            mang1.push(mang[i])
+        }
+    }
+    for (let i = 0; i < mang1.length; i++) {
+        for (let j = 0; j < mang.length; j++) {
+            if (mang1[i] === mang[j]) {
+                count++;
+            }
+        }
+        alert("Ký tự " + mang[i] + " xuất hiện " + count + " lần")
+
+        count = 0
+    } alert(mang)
+</script>
+</body>
+</html>

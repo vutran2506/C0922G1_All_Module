@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<p >Độ F</p>-->
+<!--<input type="number" id="doF" placeholder="Nhập nhiệt đọ F vào"  onchange="chuyenDoi()">-->
+<!--<p id=" doC" >ĐộC</p>-->
+<!--<p id="ketqua"></p>-->
+<p>
+    <label>Nhập nhiệt độ C</label>
+    <input id="doC" type="number" placeholder="Nhập nhiệt độ"
+           oninput="doC(this.value)"
+           onchange="doC(this.value)">
+</p>
+<p>Độ F: <span id="doF"></span></p>
+<script>
+    function doC(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("doF").innerHTML = (valNum-32) / 1.8;
+    }
+
+</script>
+</body>
+</html>

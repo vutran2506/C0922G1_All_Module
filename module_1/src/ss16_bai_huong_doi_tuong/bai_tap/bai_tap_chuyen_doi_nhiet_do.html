@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class temperature {
+        constructor(doC) {
+            this.doC = doC;
+
+        }
+
+        doF() {
+            return this.doC * 1.8 + 32;
+        }
+
+        doK() {
+            return this.doC + 273.15;
+        }
+    }
+
+    let doC = parseInt(prompt("Nhập nhiệt độ C"))
+    while (doC < -273) {
+        doC = parseInt(prompt("Bạn cần nhập nhiệt độ lớn hơn -273"))
+    }
+    let temperature1 = new temperature(doC);
+    document.write("Độ F của  " + doC + " độ C là:   " + temperature1.doF() + "<br>")
+    document.write("Độ K của  " + doC + " độ C là:   " + temperature1.doK())
+
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timSoNguyenTo(mang) {
+
+        let result = [];
+        let count = 0;
+        let a = 0;
+        for (i = 0; i < mang.length; i++) {
+            for (j = 0; j < mang[i].length; j++) {
+                for (let k = 1; k <= parseInt(mang[i][j]); k++) {
+                    if (parseInt(mang[i][j]) % k === 0) {
+                        a++;
+                    }
+                }
+                if (a === 2) {
+                    result.push(mang[i][j]);
+                    count += 1;
+                }
+                a = 0;
+            }
+        }
+        return document.write("Các số nguyên tố là" + result + "<br>" + "Có " + count + " số nguyên tố trong mảng");
+    }
+
+    let num1 = prompt("Nhập chiều dài mảng 1")
+    let mang1 = [];
+    for (let i = 0; i < num1; i++) {
+        mang1[i] = +prompt("Nhập phần tử mảng1 ");
+    }
+    let num2 = prompt("Nhập chiều dài mảng 2")
+    let mang2 = [];
+    for (let i = 0; i < num2; i++) {
+        mang2[i] = +prompt("Nhập phần tử mảng 2");
+    }
+    let mang = [mang1, mang2];
+    timSoNguyenTo(mang)
+
+
+
+</script>
+</body>
+</html>

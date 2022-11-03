@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function timMimMax(mang) {
+        let max = mang[0][0];
+        let min = mang[0][0];
+        for (let i = 0; i < mang.length; i++) {
+            for (let j = 0; j < mang[i].length; j++) {
+                if (mang[i][j] > max) {
+                    max = mang[i][j]
+                }
+
+                if (mang[i][j] < min) {
+                    min = mang[i][j]
+                }
+            }
+        }
+         return document.write("Giá trị lớn nhất trong mảng là:  " + max + "<br>"+"Giá trị nhỏ nhất trong mảng là:  " + min)
+    }
+
+    let length1 = prompt("Nhập chiều dài mảng 1");
+    let mang1 = [];
+    for (let i = 0; i < length1; i++) {
+        mang1[i] = +prompt("Nhập phần tử " + i + "  mảng 1");
+    }
+    let length2 = prompt("Nhập chiều dài mảng 2");
+    let mang2 = [];
+    for (let i = 0; i < length2; i++) {
+        mang2[i] = +prompt("Nhập phần tử " + i + " mảng 2");
+    }
+    
+    let mang = [mang1, mang2];
+    timMimMax(mang)
+</script>
+</body>
+</html>

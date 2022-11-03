@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let kyTu = prompt("Nhập ký tự cần kiểm tra")
+    // switch (kyTu) {
+    //     case"o":
+    //     case "e":
+    //     case "i":
+    //     case "a":
+    //     case "u":
+    //     case "A":
+    //     case "E":
+    //     case "O":
+    //     case "I":
+    //     case "U":
+    //         alert("đây là nguyên âm");
+    //         break;
+    //     default:
+    //         alert("Đây là phụ âm")
+//     // }
+//      let num = prompt("Nhập chuỗi dẫy số");
+//      num.split("")
+//     let b =[]
+//     for (i=0;i<num.length;i++){
+// b[i] += num[i]
+//     } document.write(b)
+    let num = prompt("Nhập chuỗi a");
+      let mang=num.split("");
+    let num1 = prompt("Nhập chuõi b");
+     let mang1= num1.split("");
+    for (let i=0;i<mang1.length;i++){
+        for (let j=0;j<mang.length;j++){
+            if(mang1[i]==mang[j]){
+                mang1.splice(i,1);
+                break;
+            }
+
+        }
+
+    }document.write(mang1)
+
+</script>
+</body>
+</html>

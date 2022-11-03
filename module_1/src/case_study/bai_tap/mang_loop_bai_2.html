@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra số không có trong mảng</title>
+</head>
+<body>
+<script>
+    let num = prompt("Nhập chiều dài mảng A")
+    let mang1= []
+    for (let i = 0; i <num ; i++) {
+        mang1[i]= +prompt("Nhập các phần tử ở vị trí "+i+" của mảng A")
+    }
+    let num1 = prompt("Nhập chiều dài mảng B");
+    let mang2 =[];
+    for (let i = 0; i < num1 ; i++) {
+        mang2[i]=+prompt("Nhập các phần tử ở vị trí "+i+"của mảng B")
+    }
+    let mang = [];
+    for (let i = 0; i <mang2.length ; i++) {
+        if(mang1.indexOf(mang2[i])==-1){
+            mang.push(mang2[i])
+        }
+    } document.write("Số ký tự mảng B không trùng mảng A:  "+mang)
+</script>
+</body>
+</html>

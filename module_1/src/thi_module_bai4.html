@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table style="float: right; width: 50%;background-color: aquamarine">
+    <tr>
+        <th colspan="5"><h3>Bảng quản lý danh sách sản phẩm</h3></th>
+    </tr>
+    <tr>
+        <th>Mã sản Phẩm</th>
+        <th>Tên sảm Phẩm</th>
+        <th>Hãng sản xuất</th>
+        <th>Giá</th>
+    </tr>
+    <tbody id="danhsach">
+
+    </tbody>
+</table>
+<h1>THÔNG TIN SẢN PHẨM</h1>
+<table style="background-color: #9794d9">
+    <tr>
+        <td>Mã sản Phẩm</td>
+        <td><input type="text" id="id"></td>
+    </tr>
+    <tr>
+        <td>Tên sản phẩm</td>
+        <td><input type="text" id="sanpham"></td>
+    </tr>
+    <tr>
+        <td>Hãng sản xuất</td>
+        <td><input type="text" id="hangsanxuat"></td>
+    </tr>
+    <tr>
+        <td>Giá Bán</td>
+        <td><input type="text" id="gia"></td>
+    </tr>
+    <tr>
+        <th colspan="2">
+            <button type="button" style="background-color: green" onclick="them()"> ADD</button>
+        </th>
+    </tr>
+</table>
+<script>
+    class SanPham {
+        constructor(id, tensanpham, hangsanxuat, gia) {
+            this.id = id;
+            this.tensanpham = tensanpham;
+            this.hangsanxuat = hangsanxuat;
+            this.gia = gia;
+        }
+
+        getId() {
+            this.id
+        }
+
+        getTenSanPham() {
+            this.tensanpham
+        }
+
+        getHangSanXuat() {
+            this.hangsanxuat
+        }
+
+        getGia() {
+            this.gia
+        }
+
+        setId(id) {
+            this.id = id
+        }
+
+        setTenSanPham(tensanpham) {
+            this.tensanpham = tensanpham
+        }
+
+        setHangsanxuat(hangsanxuat) {
+            this.hangsanxuat = hangsanxuat
+        }
+
+        setGia(gia) {
+            this.gia = gia
+        }
+    }
+
+    class QuanLiSanPham {
+        constructor(arr) {
+            this.sanpham = arr
+        }
+
+        danhSachSanPham() {
+            let contten = '';
+            for (let i = 0; i < this.sanpham.length; i++) {
+                contten += ' <tr>\n' +
+                    '        <th>' + this.sanpham[i].id + '</th>\n' +
+                    '        <th>' + this.sanpham[i].tensanpham + '</th>\n' +
+                    '        <th>' + this.sanpham[i].hangsanxuat + '</th>\n' +
+                    '        <th>' + this.sanpham[i].gia + '</th>\n' +
+                    '    </tr>'
+            }
+            document.getElementById("danhsach").innerHTML = contten
+        }
+
+        them(sanpham1) {
+            this.sanpham.push(sanpham1)
+        }
+    }
+
+    let arr = [];
+    let quanLy = new QuanLiSanPham(arr)
+
+    function them() {
+        let id = document.getElementById("id").value;
+        let tenSanPham = document.getElementById("sanpham").value;
+        let hangSanXuat = document.getElementById("hangsanxuat").value;
+        let gia = document.getElementById("gia").value;
+        let sanPham1 = new SanPham(id, tenSanPham, hangSanXuat, gia)
+        quanLy.them(sanPham1)
+        quanLy.danhSachSanPham()
+        clear()
+    }
+
+    function clear() {
+        let id = document.getElementById("id").value = "";
+        let tenSanPham = document.getElementById("sanpham").value = ""
+        let hangSanXuat = document.getElementById("hangsanxuat").value = ""
+        let gia = document.getElementById("gia").value = ""
+    }
+
+</script>
+</body>
+</html>

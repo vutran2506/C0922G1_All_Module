@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function footToMet(met) {
+ foot = met*3.279
+    return foot
+}
+function metToFoot(foot) {
+  met  = foot*0.305
+    return met
+}
+let foot = parseFloat(prompt("Nhập số foot"))
+document.write(foot+ " foot"+"="+footToMet(foot)+" met")
+document.write("<br>")
+let met = parseFloat(prompt("Nhập số mét"))
+document.write(met +" met"+"="+metToFoot(met) +" foot")
+
+</script>
+</body>
+</html>

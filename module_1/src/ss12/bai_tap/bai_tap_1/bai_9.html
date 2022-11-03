@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mangA = [];
+    let mangB = [];
+    let mangC ;
+    mangC = mangA.concat(mangB)
+    document.write(mangC)
+    let num =prompt("Nhập chiều dài của mảng ");
+    for(i=0;i<num;i++){
+        mangA[i] = prompt("Nhập các phần tử mảng A[ "+i+"]")
+    }
+    for(i=0;i<num;i++){
+        mangB[i] = prompt("Nhập các phần tử mảng B[ "+i+"]")
+    }
+
+    mangC = mangA.concat(mangB)
+    document.write(mangC)
+</script>
+</body>
+</html>

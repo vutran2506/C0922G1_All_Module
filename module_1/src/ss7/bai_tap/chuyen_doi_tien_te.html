@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th></th>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>Nhập số tiền</td>
+        <td><input type="text" id="nhapsotien" ></td>
+        <td>
+            <select id="fromC">
+                <option value="VND">VND</option>
+                <option value="USA">USA</option>
+            </select>
+        </td>
+        <td>
+            <select id="To">
+                <option value="VND">VND</option>
+                <option value="USA">USA</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="chuyenTien()" >convert</button>
+        </td>
+    </tr>
+</table>
+<p> Kết quả:</p>
+<input type="text" id="result" style="width: 300px">
+<script>
+    function chuyenTien() {
+        let soTien = document.getElementById('nhapsotien').value;
+        let fromC = document.getElementById('fromC').value;
+        let To = document.getElementById('To').value;
+        let result;
+        if(fromC=='USA' && To=="VND") {
+            result =+(soTien*23000)+'VND';
+            //document.write('result:' +result)
+        } else if(fromC == "VND" && To == 'USA') {
+            result =  +(soTien/23000)+'USA';
+            //document.write('result:'  +result)
+        }else if(fromC=="VND") {
+            result = +soTien+'VND';
+            // document.write('result:' +result)
+        }
+        else{
+            result= +soTien+'USA';
+            // document.write('result:' +result)
+        }
+        document.getElementById('result').value =result
+    }
+</script>
+</body>
+</html>

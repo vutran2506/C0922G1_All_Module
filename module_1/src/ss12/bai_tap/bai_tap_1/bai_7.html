@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng  và gán 0 cho phần tử cuối cùng của mảng)</title>
+</head>
+<body>
+<script>
+
+    let chieuDaiMang = prompt("Nhập chièu dài của mãng");
+    let mang = [];
+    for (i = 0; i < chieuDaiMang; i++) {
+        mang[i] = prompt("nhập phần tử của mảng a [" + i + "]");
+    }
+
+    let phanTuV = prompt("nhập phần tử V")
+    let result = ""
+    for (i = 0; i < chieuDaiMang; i++) {
+        if (phanTuV == mang[i]) {
+            mang.splice(i, 1)
+        mang.push("0")
+        }
+    }   document.write(mang)
+</script>
+</body>
+</html>

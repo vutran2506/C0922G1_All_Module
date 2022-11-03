@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function doiChoMang(mang) {
+
+    let viTriDau = 0;
+    let viTriCuoi = mang.length;
+    while (viTriDau < viTriCuoi) {
+        let a = mang[viTriDau]
+        mang[viTriDau] = mang[viTriCuoi];
+        mang[viTriCuoi] = a;
+        viTriDau ++;
+        viTriCuoi --;
+    }
+        document.write(mang)
+    }
+    let chuoiKyTu = prompt("Nhập chuỗi ký tự");
+    let mang = chuoiKyTu.split("")
+    let ketQua = doiChoMang(mang);
+
+
+</script>
+</body>
+</html>

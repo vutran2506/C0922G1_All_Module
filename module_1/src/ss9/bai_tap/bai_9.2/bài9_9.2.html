@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="canhthu1" placeholder="Nhập cạnh thứ 1">
+<input type="text" id="canhthu2" placeholder="Nhập cạnh thư 2">
+<input type="text" id="canhthu3" placeholder="Nhập cạnh thứ 3">
+<button type="button" id="xacnhan" onclick="kiemTra()" >Kiểm Tra</button>
+<script>
+   function kiemTra() {
+let a = parseFloat(document.getElementById("canhthu1").value);
+let b = parseFloat(document.getElementById("canhthu2").value);
+let c = parseFloat(document.getElementById("canhthu3").value);
+ if(( a <= 0) && (b <= 0) && (c <= 0)) {
+     alert("Không phải ba cạnh của tam giác")
+} else if((a+b)>c && (a+c)>b && (b+c)>a) {
+     alert(" ba cạnh của tam giác")
+ } else
+    alert("khong la ba cạnh của tam giác")
+   }
+</script>
+
+</body>
+</html>

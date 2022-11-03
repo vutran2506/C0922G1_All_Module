@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính điểm trung bình môn học</h1>
+<p>Điểm lý</p>
+<input type="text" id="diemly" placeholder="Nhập điểm lý">
+<p>Điểm hoá</p>
+<input type="text" id="diemhoa" placeholder="Nhập điểm hoá">
+<p>Điểm sinh</p>
+<input type="text" id="diemsinh" placeholder="Nhập điểm sinh">
+<p>Điểm trung bình</p>
+<input type="text" id="diemTrungBinh">
+<button onclick="ketQua()">submit</button>
+<script>
+    function ketQua() {
+        let diemly= document.getElementById('diemly').value;
+        let diemHoa= document.getElementById('diemhoa').value;
+        let diemSinh= document.getElementById('diemsinh').value;
+        let ketQua
+        ketQua=(parseFloat(diemly)+parseFloat(diemHoa)+parseFloat(diemSinh))/3
+        document.getElementById('diemTrungBinh').value=ketQua;
+    }
+</script>
+</body>
+</html>

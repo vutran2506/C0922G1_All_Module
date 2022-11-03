@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt("nhập chiều dài mảng");
+    let mang1 = []
+    let mang = [];
+    for (let i = 0; i < num; i++) {
+        mang[i] = prompt("Nhập phần tử thứ " + i)
+        while (mang1.indexOf(mang[i]) !== -1) {
+            mang[i] = +prompt("Mời bạn nhập lại")
+        }
+        mang1.push(mang[i])
+    }
+    alert(mang)
+</script>
+</body>
+</html>

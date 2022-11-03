@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt("Nhập chiều dài của mảng");
+    let mang=[];
+    for (let i = 0; i <num ; i++) {
+        mang[i]= +prompt("Nhập phần tử thứ "+i);
+    }
+let kiemTra = true
+    for (let i = 0; i <mang.length ; i++) {
+        if (mang[i]!==mang[mang.length-1-i]){
+            kiemTra =false;
+            break;
+        }
+    }
+    if(kiemTra===false){
+        alert("Mảng này không đối xứng")
+    }else{
+        alert("Mảng này đối xứng")
+    }
+
+</script>
+</body>
+</html>

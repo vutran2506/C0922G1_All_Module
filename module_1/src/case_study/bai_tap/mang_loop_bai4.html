@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt("Nhập 1 dãy số nhỏ hơn 10 ")
+    let mang = num.split("")
+    let mang1 = ["0","1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    let mang2 = ["Không","Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín"];
+    for (let i = 0; i < mang.length; i++) {
+        for(let j=0;j<mang1.length;j++){
+            if(mang[i]==mang1[j]){
+                mang[i]=mang2[j]
+            }
+        }
+        document.write(mang[i]+" ")
+    }
+</script>
+</body>
+</html>

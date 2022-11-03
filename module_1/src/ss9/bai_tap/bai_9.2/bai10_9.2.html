@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapSoDien = prompt("Nhập số điện đã dùng");
+    let soTien
+    if( nhapSoDien < 0){
+        alert("Nhập lại số điện")
+    } else if(nhapSoDien < 50 ) {
+        soTien=nhapSoDien*1.648
+        alert("Số tiền cần phải trả là:  "+soTien+" Nghìn đồng")
+    } else if(nhapSoDien<100) {
+        soTien = (50*1.648 + (nhapSoDien-50)*1.734)
+        alert("Số tiền cần phải trả là:  "+soTien+" Nghìn đồng")
+    } else if(nhapSoDien<200) {
+        soTien = (50*1.648 +50*1.734 + (nhapSoDien-100)*2.014)
+        alert("Số tiền cần phải trả là:  "+soTien+" Nghìn đồng")
+    }else if(nhapSoDien<300) {
+        soTien = (50*1.648 +50*1.734 + 100*2.014 +(nhapSoDien-200)*2.536)
+        alert("Số tiền cần phải trả là:  "+soTien+" Nghìn đồng")
+    } else if(nhapSoDien<400) {
+        soTien = (50*1.648 +50*1.734 + 100*2.014 + 100*2.536 +(nhapSoDien-300)*2.834)
+        alert("Số tiền cần phải trả là:  "+soTien+" Nghìn đồng")
+    } else
+    soTien = (50*1.648 +50*1.734 + 100*2.014 + 100*2.536+100*2.834+(nhapSoDien-400)*2.927)
+    alert("Số tiền cần phải trả là:  "+soTien+" Nghìn đồng")
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập cân nặng</p>
+<input type="text" id="cannang" placeholder="Nhập cân nặng">
+<br>
+<br>
+<p>Nhập chiều cao</p>
+<input type="text" id="chieucao" placeholder="Nhập chiều cao">
+<button type="submit"id="submit" onclick="kiemTra()">Kiểm Tra</button>
+<script>
+    function kiemTra() {
+let canNang=parseFloat(document.getElementById('cannang').value);
+let chieuCao= parseFloat(document.getElementById('chieucao').value);
+let chiSoBim = canNang/(chieuCao*chieuCao);
+        if(chiSoBim < 18.5){
+            alert("Underweight");
+        }else if(chiSoBim < 25) {
+            alert("Normal");
+        }else if(chiSoBim <30) {
+            alert("Qverweight");
+        }else{
+            alert("Obese")
+        }
+    }
+</script>
+</body>
+</html>

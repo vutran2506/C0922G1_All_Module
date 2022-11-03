@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài Toán Máy Tính</h1>
+<p>Nhập số thứ nhất</p>
+<input type="number" id="sothunhat" placeholder="Nhập số thứ nhất">
+<br>
+<br>
+<p>Nhập số thứ hai</p>
+<input type="number" id="sothuhai" placeholder="Nhập số thứ hai">
+<br>
+<br>
+<p>Phép tính</p>
+<select id="pheptinh">
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>/</option>
+</select>
+<br>
+<br>
+<p>Kết Quả</p>
+<input type="text" id="ketqua">
+<button onclick="ketQua()">Submit</button>
+<script type="text/javascript">
+    function ketQua() {
+        var soThuNhat= document.getElementById('sothunhat').value;
+        var soThuHai= document.getElementById('sothuhai').value;
+        var phepTinh= document.getElementById('pheptinh').value;
+        var ketqua
+        if(phepTinh=="+") {
+            ketqua = parseFloat(soThuNhat) + parseFloat(soThuHai)
+        } else if(phepTinh=="-") {
+            ketqua = parseFloat(soThuNhat) - parseFloat(soThuHai)
+        } else if(phepTinh=="*") {
+            ketqua = parseFloat(soThuNhat) * parseFloat(soThuHai)
+        } else  {
+            if(soThuHai==0){
+                alert('không chia được')
+            } else
+                ketqua = parseFloat(soThuNhat) / parseFloat(soThuHai)
+        }
+
+        document.getElementById('ketqua').value=ketqua;
+    }
+</script>
+</body>
+</html>
