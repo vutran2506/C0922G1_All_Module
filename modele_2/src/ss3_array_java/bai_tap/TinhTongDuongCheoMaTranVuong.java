@@ -6,21 +6,19 @@ import java.util.Scanner;
 public class TinhTongDuongCheoMaTranVuong {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhập chiều dài cột");
-        int col = Integer.parseInt(scanner.nextLine());
-        System.out.println("Nhập chiều dài hàng");
-        int row =Integer.parseInt(scanner.nextLine());
+        System.out.println("Nhập chiều dài cột và hàng");
+        int rowAndCol =Integer.parseInt(scanner.nextLine());
         int sum =0;
-        int [][] arr = new int[col][row];
-        for (int i = 0; i < col; i++) {
-            for (int j = 0; j < row; j++) {
+        int [][] arr = new int[rowAndCol][rowAndCol];
+        for (int i = 0; i < rowAndCol; i++) {
+            for (int j = 0; j < rowAndCol; j++) {
                 System.out.println("Nhập phần tử thứ ["+i+"]"+"["+j+"]");
                 arr[i][j]= Integer.parseInt(scanner.nextLine());
             }
         }
         System.out.println(Arrays.deepToString(arr));
-        for (int i = 0; i < col; i++) {
-            for (int j = 0; j < row; j++) {
+        for (int i = 0; i < rowAndCol; i++) {
+            for (int j = 0; j < rowAndCol; j++) {
                 if(i==j){
                     sum+= arr[i][j];
                 }

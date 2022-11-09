@@ -10,19 +10,19 @@ public class TimMaxTrongMang2Chieu {
         int col = Integer.parseInt(scanner.nextLine());
         System.out.println("Nhập chiều dài hàng");
         int row = Integer.parseInt(scanner.nextLine());
-        int [][] array = new int[col][row];
+        int [][] array = new int[row][col];
         int indexI = 0;
         int indexJ =0;
-        for (int i = 0; i < col; i++) {
-            for (int j = 0; j < row; j++) {
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
                 System.out.println("Nhập phần tử mảng vị trí ["+i+"]"+"["+j+"]" );
                 array[i][j] = Integer.parseInt(scanner.nextLine());
             }
         }
         System.out.println(Arrays.deepToString(array));
       int max = array[0][0];
-        for (int i = 0; i < col; i++) {
-            for (int j = 0; j < row; j++) {
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
                 if (array[i][j]>max){
                     max = array[i][j];
                     indexI = i;

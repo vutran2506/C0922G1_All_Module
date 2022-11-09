@@ -6,24 +6,18 @@ import java.util.Scanner;
 public class TimMinTrongMang {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhập chiều dài cột");
-        int col = Integer.parseInt(scanner.nextLine());
-        System.out.println("Nhâp chiều dài hàng");
-        int row =Integer.parseInt(scanner.nextLine());
-        int [][] arr = new int[col][row];
-        for (int i = 0; i < col; i++) {
-            for (int j = 0; j < row; j++) {
-                System.out.println("Nhập phần tử mảng vị trí ["+i+"]"+"["+j+"]" );
-                arr [i][j] =Integer.parseInt(scanner.nextLine());
-            }
+        System.out.println("Nhập chiều dài của mảng");
+        int arrLength = Integer.parseInt(scanner.nextLine());
+        int [] arr = new int[arrLength];
+        for (int i = 0; i < arrLength; i++) {
+            System.out.println("Nhập phần tử mảng vị trí ["+i+"]" );
+            arr [i] =Integer.parseInt(scanner.nextLine());
         }
-        System.out.println(Arrays.deepToString(arr));
-        int min = arr[0][0];
-        for (int i = 0; i < col; i++) {
-            for (int j = 0; j < row; j++) {
-                if(arr[i][j]<min){
-                    min = arr[i][j];
-                }
+        System.out.println(Arrays.toString(arr));
+        int min = arr[0];
+        for (int i = 0; i < arrLength; i++) {
+            if(arr[i]<min){
+                min = arr[i];
             }
         }
         System.out.println("Số nhỏ nhất trong mảng là: "+min);
