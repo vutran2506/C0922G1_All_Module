@@ -66,15 +66,15 @@ public class Fan {
     public String toString() {
         if (on) {
             return "Fan{" +
-                    ", speed=" + speed +
+                    " speed=" + speed +
                     ", radius=" + radius +
                     ", color='" + color + '\'' +
-                    "'fan is on'}";
+                    ",fan is on}";
         } else {
             return "Fan{" +
-                    ", radius=" + radius +
+                    " radius=" + radius +
                     ", color='" + color + '\'' +
-                    "'fan is off'}";
+                    ",fan is off}";
         }
     }
 }
