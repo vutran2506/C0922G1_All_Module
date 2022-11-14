@@ -3,9 +3,8 @@ package ss6_Inheritance_Polymorphism.bai_tap.Point2D;
 public class TestPoint3D {
     public static void main(String[] args) {
         Point3D point3D = new Point3D();
-        point3D.setX(1.0f);
-        point3D.setY(2.0f);
-        point3D.setZ(3.0f);
-        System.out.println(point3D.toString());
+        System.out.println(point3D);
+        point3D.setXYZ(1,2,3);
+        System.out.println(point3D);
     }
 }

@@ -6,12 +6,20 @@ public class Circle {
 
     Circle() {
     }
-    Circle(double radius){
+        private Circle(double radius){
         this.radius =radius;
     }
 
     public double getRadius() {
         return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public String getColor() {

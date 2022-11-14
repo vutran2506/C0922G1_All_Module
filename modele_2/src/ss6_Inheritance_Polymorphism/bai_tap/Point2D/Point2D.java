@@ -38,8 +38,8 @@ public class Point2D {
 
     @Override
     public String toString() {
-        return ",Có toạ độ x là :" + x +
-                ", có toạ độ y là" + y
+        return " Có toạ độ x là :" + x +
+                ", Có toạ độ y là " + y
                 ;
     }
 }
