@@ -4,10 +4,18 @@ import ss7_abctractClass_Interface.bai_tap.Colorable.Colorable;
 import ss7_abctractClass_Interface.bai_tap.Resizeable.Shape.Rectangle;
 
 public class Square extends Rectangle implements Colorable {
-    private double edge ;
+    private  double edge ;
 
-    public double getEdge() {
-        return edge;
+    public  double getEdge() {
+            return this.edge = super.getHeight();
+    }
+
+    public Square(double edge) {
+        super(edge, edge);
+    }
+
+    public Square() {
+
     }
 
     public void setEdge(double edge) {
@@ -15,14 +23,11 @@ public class Square extends Rectangle implements Colorable {
         super.setWidth(edge);
     }
 
-    public Square(double edge) {
-        super(edge,edge);
-    }
-
     @Override
     public String toString() {
-        return "Square"
-                ;
+        return "Square{" +
+                "edge=" + getEdge() +
+                '}';
     }
 
     @Override
