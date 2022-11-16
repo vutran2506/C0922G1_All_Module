@@ -39,40 +39,38 @@ public class TestMyArrayList {
             MyArrayList<Student> studentMyArrayList =  new MyArrayList<>();
             MyArrayList<Student> newMyArraylist = new MyArrayList<>();
 
-
             studentMyArrayList.add(student);
             studentMyArrayList.add(student1);
             studentMyArrayList.add(student2);
             studentMyArrayList.add(student3);
             studentMyArrayList.add(student5,2);
 
-//            studentMyArrayList.clear();
+            for (int i = 0; i < studentMyArrayList.size(); i++) {
+                Student students = (Student) studentMyArrayList.elements[i];
+                System.out.println(students.getId());
+                System.out.println(students.getName());
+            }
 
-//            newMyArraylist = studentMyArrayList.clone();
+            newMyArraylist = studentMyArrayList.clone();
 
-//            newMyArraylist.remove(2);
+            for (int i = 0; i < newMyArraylist.size(); i++) {
+                System.out.println(newMyArraylist.get(i).getName());
+            }
 
-//            for (int i = 0; i < newMyArraylist.size(); i++) {
-//                System.out.println(newMyArraylist.get(i).getName());
-//            }
-
-//            for (int i = 0; i < newMyArraylist.size(); i++) {
-//                System.out.println(newMyArraylist.get(i).getName());
-//            }
+            newMyArraylist.remove(2);
+            for (int i = 0; i < newMyArraylist.size(); i++) {
+                System.out.println(newMyArraylist.get(i).getName());
+            }
 
             System.out.println(studentMyArrayList.get(3).getName());
 
-//            System.out.println(studentMyArrayList.size());
+            System.out.println(studentMyArrayList.size());
 
-//            System.out.println(studentMyArrayList.indexOf(student3));
+            System.out.println(studentMyArrayList.indexOf(student3));
 
-//            System.out.println(studentMyArrayList.contains(student3));
+            System.out.println(studentMyArrayList.contains(student3));
 
-//            for (int i = 0; i < studentMyArrayList.size(); i++) {
-//                Student student4 = (Student) studentMyArrayList.elements[i];
-//                System.out.println(student4.getId());
-//                System.out.println(student4.getName());
-//            }
+            studentMyArrayList.clear();
         }
     }
 }
