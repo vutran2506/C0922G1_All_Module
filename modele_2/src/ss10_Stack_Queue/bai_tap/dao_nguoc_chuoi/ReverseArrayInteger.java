@@ -1,4 +1,4 @@
-package ss10_Stack_Queue.bai_tap.dao_nguoc_mang_so_nguyen;
+package ss10_Stack_Queue.bai_tap.dao_nguoc_chuoi;
 
 import java.util.Arrays;
 import java.util.Scanner;
