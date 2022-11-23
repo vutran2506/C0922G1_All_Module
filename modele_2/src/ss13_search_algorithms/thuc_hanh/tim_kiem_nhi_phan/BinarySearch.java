@@ -28,7 +28,7 @@ public class BinarySearch {
             if (arrString[middle]== valueSearch){
                 return middle;
             }
-            if (valueSearch > middle ){
+            if (valueSearch > arrString[middle] ){
                return binarySearch(arrString,middle+1,maxRight,valueSearch);
             }else {
                 return binarySearch(arrString,minLeft,middle-1,valueSearch);
