@@ -5,17 +5,6 @@ public class Employee extends Person{
     private String viTri;
     private double luong;
 
-    public Employee() {
-    }
-
-    public Employee(String maSo, String ten, String ngaySinh, String gioiTinh, String cMND, String phone,
-                    String email, String trinhDo, String viTri, double luong) {
-        super(maSo, ten, ngaySinh, gioiTinh, cMND, phone, email);
-        this.trinhDo = trinhDo;
-        this.viTri = viTri;
-        this.luong = luong;
-    }
-
     public String getTrinhDo() {
         return trinhDo;
     }
@@ -37,6 +26,17 @@ public class Employee extends Person{
     }
 
     public void setLuong(double luong) {
+        this.luong = luong;
+    }
+
+    public Employee() {
+    }
+
+    public Employee(int maSo, String ten, String ngaySinh, String gioiTinh, String cMND,
+                    String phone, String email, String trinhDo, String viTri, double luong) {
+        super(maSo, ten, ngaySinh, gioiTinh, cMND, phone, email);
+        this.trinhDo = trinhDo;
+        this.viTri = viTri;
         this.luong = luong;
     }
 }

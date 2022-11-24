@@ -1,7 +1,7 @@
 package Case_study_module2.Model;
 
 public class Person {
-    private String maSo;
+    private int maSo;
     private String ten;
     private String ngaySinh;
     private String gioiTinh;
@@ -12,11 +12,11 @@ public class Person {
     public Person() {
     }
 
-    public String getMaSo() {
+    public int getMaSo() {
         return maSo;
     }
 
-    public void setMaSo(String maSo) {
+    public void setMaSo(int maSo) {
         this.maSo = maSo;
     }
 
@@ -68,7 +68,7 @@ public class Person {
         this.email = email;
     }
 
-    public Person(String maSo, String ten, String ngaySinh, String gioiTinh, String cMND, String phone, String email) {
+    public Person(int maSo, String ten, String ngaySinh, String gioiTinh, String cMND, String phone, String email) {
         this.maSo = maSo;
         this.ten = ten;
         this.ngaySinh = ngaySinh;
