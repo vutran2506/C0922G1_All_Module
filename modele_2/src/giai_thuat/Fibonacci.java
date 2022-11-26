@@ -19,7 +19,7 @@ public class Fibonacci {
         int a = 1;
         int b = 1;
         int c = 0;
-        if (number <= 2) {
+        if (number <2) {
             return 1;
         } else {
             for (int i = 2; i <= number; i++) {
