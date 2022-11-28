@@ -19,6 +19,7 @@ public class ReverseArrayInteger {
         for (int j : arr) {
             stackDaySo.push(j);
         }
+
         System.out.println(stackDaySo);
 
         System.out.println();

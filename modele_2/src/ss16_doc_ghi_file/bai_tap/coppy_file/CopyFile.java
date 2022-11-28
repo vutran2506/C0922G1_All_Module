@@ -13,7 +13,7 @@ public class CopyFile {
         BufferedWriter bufferedWriter = null;
         try {
 //            Kiểm tra file có tồn tại hay không.
-            File file = new File(FILE_WRITE);
+            File file = new File(FILE_READ);
             if (!file.exists()){
                 throw new FileNotFoundException();
             }

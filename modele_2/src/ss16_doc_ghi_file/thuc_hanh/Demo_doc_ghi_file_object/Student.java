@@ -1,4 +1,4 @@
-package ss16_doc_ghi_file.thuc_hanh;
+package ss16_doc_ghi_file.thuc_hanh.Demo_doc_ghi_file_object;
 
 public class Student {
     private int id;

@@ -9,8 +9,8 @@ import java.util.List;
 public class ProductController {
     private final IProductService productService = new ProductService();
     public void addProduct(Product product){
-        this.productService.addProduct(product);
-    }
+        productService.addProduct(product);
+    };
     public List<Product> getAll(){
         return this.productService.getAll();
     }

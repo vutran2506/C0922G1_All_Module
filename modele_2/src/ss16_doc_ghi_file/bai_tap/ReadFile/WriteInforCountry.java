@@ -1,7 +1,5 @@
 package ss16_doc_ghi_file.bai_tap.ReadFile;
 
-import ss16_doc_ghi_file.bai_tap.ReadFile.Country;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,8 +25,7 @@ public class WriteInforCountry {
         countryList.add(country6);
         countryList.add(country7);
         countryList.add(country8);
-        for (Country c :
-                countryList) {
+        for (Country c : countryList) {
             writeInforCountry(c);
 
         }
@@ -41,7 +38,7 @@ public class WriteInforCountry {
         try {
             fileWriter = new FileWriter(FILE_NAME, true);
             bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write(country.writeInforCountry());
+            bufferedWriter.write(country.InforCountry());
             bufferedWriter.newLine();
             bufferedWriter.flush();
         } catch (IOException e) {

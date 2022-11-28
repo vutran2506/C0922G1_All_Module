@@ -1,5 +1,7 @@
 package ss16_doc_ghi_file.thuc_hanh;
 
+import ss16_doc_ghi_file.thuc_hanh.Demo_doc_ghi_file_object.Student;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -39,7 +41,7 @@ public class WriteObject {
             bufferedWriter.write(student.writeInfor());
 //            Tạo 1 dòng mới.
             bufferedWriter.newLine();
-//            Xả bộ nh đệm
+//            Xả bộ nhớ đệm
             bufferedWriter.flush();
 //            xử lý ngoại lệ khi tạo filewrite.
         } catch (IOException e) {

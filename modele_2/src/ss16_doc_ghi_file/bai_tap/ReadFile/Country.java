@@ -37,7 +37,7 @@ public class Country {
     public void setName(String name) {
         this.name = name;
     }
-    public  String writeInforCountry(){
+    public  String InforCountry(){
         return this.id+","+this.code+","+this.name;
     }
 }
