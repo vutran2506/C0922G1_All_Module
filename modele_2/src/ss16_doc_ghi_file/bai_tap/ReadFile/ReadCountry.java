@@ -20,14 +20,14 @@ public class ReadCountry {
                 System.out.println(parseCsvLine(line));
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         } finally {
 
             try {
                 bufferedReader.close();
                 fileReader.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                e.printStackTrace();
             }
         }
     }

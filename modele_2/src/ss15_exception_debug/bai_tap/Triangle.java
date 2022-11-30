@@ -28,7 +28,7 @@ do {
     public static void checkTriangle(double edge1, double edge2, double edge3) throws IllegalTriangleException {
         if (edge1 < 0 || edge2 < 0 || edge3 < 0 || (edge1 + edge2) <= edge3 || (edge2 + edge3) <= edge1
                 || (edge3 + edge1) <= edge2) {
-            throw new IllegalTriangleException();
+            throw new IllegalTriangleException("Nhập sai điều kiện");
         }
     }
 

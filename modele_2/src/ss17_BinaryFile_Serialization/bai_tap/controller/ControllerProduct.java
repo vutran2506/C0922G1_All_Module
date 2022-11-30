@@ -16,8 +16,8 @@ public class ControllerProduct {
     public List<Product> displayProduct() {
         return this.productService.displayProduct();
     }
-    public boolean searchProduct(int id){
-       return productService.searchProduct(id);
+    public void searchProduct(int id){
+       productService.searchProduct(id);
 
     }
 }

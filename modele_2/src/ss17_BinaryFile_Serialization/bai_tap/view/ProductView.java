@@ -48,17 +48,7 @@ public class ProductView  {
                 case 3:
                     System.out.println("Input Id");
                     int inputId = Integer.parseInt(scanner.nextLine());
-                     boolean checkProduct = controllerProduct.searchProduct(inputId);
-                    if (checkProduct) {
-                        for (Product p: controllerProduct.displayProduct()) {
-                            if (p.getId() == inputId) {
-                                System.out.println(p);
-                                break;
-                            }
-                        }
-                    } else {
-                        System.out.println("Id này không tồn tại");
-                    }
+                     controllerProduct.searchProduct(inputId);
                     break;
                 case 4:
                     System.exit(0);
