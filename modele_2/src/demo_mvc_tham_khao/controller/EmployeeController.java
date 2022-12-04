@@ -1,7 +1,7 @@
 package demo_mvc_tham_khao.controller;
 
 import demo_mvc_tham_khao.Service.IEmployeeService;
-import demo_mvc_tham_khao.Service.imp.EmployeeService;
+import demo_mvc_tham_khao.Service.impl.EmployeeService;
 import demo_mvc_tham_khao.exception.ExistedEmployeeException;
 import demo_mvc_tham_khao.exception.NotFoundEmployeeException;
 import demo_mvc_tham_khao.model.Employee;

@@ -12,7 +12,7 @@ public class ReadCountry {
     public static void main(String[] args) {
         BufferedReader bufferedReader = null;
         FileReader fileReader = null;
-        String line = null;
+        String line ;
         try {
             fileReader = new FileReader(READ_FILE);
             bufferedReader = new BufferedReader(fileReader);

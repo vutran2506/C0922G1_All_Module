@@ -12,6 +12,7 @@ public class EmployeeView {
     private final EmployeeController employeeController = new EmployeeController();
 
     public void displayMenu() {
+        int choice;
         do {
             System.out.println("=========MENU=====");
             System.out.println("1: Display Menu");
@@ -19,12 +20,22 @@ public class EmployeeView {
             System.out.println("3: Edit Employee");
             System.out.println("4: Delete Employee");
             System.out.println("5: Exit Menu");
-            System.out.println(" Enter choice number");
-            int choice = Integer.parseInt(scanner.nextLine());
+            do {
+                try {
+                    System.out.println(" Enter choice number");
+                    choice = Integer.parseInt(scanner.nextLine());
+                    break;
+                } catch (NumberFormatException e){
+                    System.out.println(e.getMessage());
+                }
+
+            } while (true);
+
             switch (choice) {
                 case 1:
                     List<Employee> list = this.employeeController.displayEmployee();
-                    if (list == null) {
+                    if (list.isEmpty()) {
+                        System.out.println("List isEmty");
                         break;
                     }
                     for (Employee e : list) {

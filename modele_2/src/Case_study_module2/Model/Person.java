@@ -12,6 +12,17 @@ public class Person {
     public Person() {
     }
 
+    public Person(int maSo, String ten, String ngaySinh, String gioiTinh, String cMND, String phone, String email) {
+        this.maSo = maSo;
+        this.ten = ten;
+        this.ngaySinh = ngaySinh;
+        this.gioiTinh = gioiTinh;
+        this.cMND = cMND;
+        this.phone = phone;
+        this.email = email;
+
+    }
+
     public int getMaSo() {
         return maSo;
     }
@@ -68,14 +79,17 @@ public class Person {
         this.email = email;
     }
 
-    public Person(int maSo, String ten, String ngaySinh, String gioiTinh, String cMND, String phone, String email) {
-        this.maSo = maSo;
-        this.ten = ten;
-        this.ngaySinh = ngaySinh;
-        this.gioiTinh = gioiTinh;
-        this.cMND = cMND;
-        this.phone = phone;
-        this.email = email;
 
+    @Override
+    public String toString() {
+        return
+                "maSo=" + maSo +
+                ", ten='" + ten + '\'' +
+                ", ngaySinh='" + ngaySinh + '\'' +
+                ", gioiTinh='" + gioiTinh + '\'' +
+                ", cMND='" + cMND + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                ',';
     }
 }

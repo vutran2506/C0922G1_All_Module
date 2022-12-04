@@ -39,4 +39,13 @@ public class Villa extends Facility {
     public void setSoTang(int soTang) {
         this.soTang = soTang;
     }
+
+    @Override
+    public String toString() {
+        return "Villa{" +
+                "tieuChuanPhong='" + tieuChuanPhong + '\'' +
+                ", dienTichHoBoi=" + dienTichHoBoi +
+                ", soTang=" + soTang + super.toString()+
+                '}';
+    }
 }

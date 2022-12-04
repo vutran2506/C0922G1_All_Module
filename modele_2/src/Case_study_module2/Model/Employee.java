@@ -39,4 +39,17 @@ public class Employee extends Person{
         this.viTri = viTri;
         this.luong = luong;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{"+super.toString()+
+                "trinhDo='" + trinhDo + '\'' +
+                ", viTri='" + viTri + '\'' +
+                ", luong=" +luong +
+                '}';
+    }
+    public String formatEmployee(){
+        return this.getMaSo()+","+getTen()+","+this.getNgaySinh()+","+this.getGioiTinh()+","+this.getcMND()+","
+                +this.getPhone()+","+this.getEmail()+","+this.getTrinhDo()+","+this.getViTri()+","+this.getLuong();
+    }
 }

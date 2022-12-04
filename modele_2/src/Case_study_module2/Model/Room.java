@@ -19,4 +19,11 @@ public class Room extends Facility {
     public void setDichVuFree(String dichVuFree) {
         this.dichVuFree = dichVuFree;
     }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "dichVuFree='" + dichVuFree + '\'' + super.toString()+
+                '}';
+    }
 }

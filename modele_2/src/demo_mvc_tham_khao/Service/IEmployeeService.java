@@ -11,5 +11,5 @@ public interface IEmployeeService {
      void  addEmployee(Employee employee) throws ExistedEmployeeException,IOException;
      List<Employee> displayEmployee() throws IOException;
      void deleteEmployee(int id) throws NotFoundEmployeeException,IOException;
-     void editEmployee(Employee employee) throws IOException;
+     void editEmployee( Employee employee) throws IOException;
 }

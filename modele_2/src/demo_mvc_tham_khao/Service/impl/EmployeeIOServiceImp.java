@@ -1,4 +1,4 @@
-package demo_mvc_tham_khao.Service.imp;
+package demo_mvc_tham_khao.Service.impl;
 
 import demo_mvc_tham_khao.Service.IEmployeeIOService;
 import demo_mvc_tham_khao.model.Employee;

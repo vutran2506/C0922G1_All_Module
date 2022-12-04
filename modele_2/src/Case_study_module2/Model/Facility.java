@@ -57,4 +57,15 @@ public class Facility {
     public void setKieuThue(String kieuThue) {
         this.kieuThue = kieuThue;
     }
+
+    @Override
+    public String toString() {
+        return "Facility{" +
+                "name='" + name + '\'' +
+                ", dienTichSuDung=" + dienTichSuDung +
+                ", giaPhong=" + giaPhong +
+                ", soNguoiSuDungToiDa=" + soNguoiSuDungToiDa +
+                ", kieuThue='" + kieuThue + '\'' +
+                '}';
+    }
 }

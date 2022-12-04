@@ -7,9 +7,14 @@ public class Customer extends Person{
     public Customer() {
     }
 
-    public Customer(String maSo, String ten, String ngaySinh, String gioiTinh, String cMND,
-                    String phone, String email, String loaiKhach, String diaChi) {
-        super(Integer.parseInt(maSo), ten, ngaySinh, gioiTinh, cMND, phone, email);
+    public Customer(String loaiKhach, String diaChi) {
+        this.loaiKhach = loaiKhach;
+        this.diaChi = diaChi;
+    }
+
+    public Customer(int maSo, String ten, String ngaySinh, String gioiTinh, String cMND, String phone,
+                    String email, String loaiKhach, String diaChi) {
+        super(maSo, ten, ngaySinh, gioiTinh, cMND, phone, email);
         this.loaiKhach = loaiKhach;
         this.diaChi = diaChi;
     }
@@ -28,5 +33,17 @@ public class Customer extends Person{
 
     public void setDiaChi(String diaChi) {
         this.diaChi = diaChi;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{"+ super.toString() +
+                "loaiKhach='" + loaiKhach + '\'' +
+                ", diaChi='" + diaChi + '\'' +
+                '}';
+    }
+    public String formatCustomer(){
+        return this.getMaSo()+","+this.getTen()+","+this.getNgaySinh()+","+this.getGioiTinh()+","+this.getcMND()+
+                ","+this.getPhone()+","+this.getEmail()+","+this.getLoaiKhach()+","+ this.getDiaChi();
     }
 }
