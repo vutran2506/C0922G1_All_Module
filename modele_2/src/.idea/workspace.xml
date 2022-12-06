@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bf654353-1f82-4cac-89a8-b2cc7f13377c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/IFacility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/impl/BookingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/impl/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/impl/Facility_impl/FacilityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/impl/PromotionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Controller/FacilityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/controller/FacilityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Controller/ManagerFuramaResort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Controller/PromotionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/controller/PromotionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Model/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/model/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Model/Facility.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/model/Facility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Model/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/model/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/model/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Model/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/model/Villa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Repository/ICommonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/repository/ICommonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Repository/IMenuRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/repository/IMenuRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Repository/IPM/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/repository/impl/BookingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Repository/IPM/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/repository/impl/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Repository/IPM/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/repository/impl/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Repository/IPM/FacilityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/repository/impl/FacilityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Repository/IPM/PromoptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/repository/impl/PromoptionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Sirvice/ICustomer/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Sirvice/ICustomer/IOCustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/IOCustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Sirvice/IEmployee/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/IEmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Sirvice/IEmployee/IOEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/IOEmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Sirvice/IPML/BookingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Sirvice/IPML/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Sirvice/IPML/Customer_impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/impl/Customer_impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Sirvice/IPML/Customer_impl/IOCustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/impl/Customer_impl/IOCustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Sirvice/IPML/EmployeeImpl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/impl/Employee_impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Sirvice/IPML/EmployeeImpl/IOEmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/sirvice/impl/Employee_impl/IOEmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Sirvice/IPML/FacilityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/Sirvice/IPML/PromotionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/View/BookingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/view/furama_view/BookingView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/View/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/view/furama_view/CustomerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/View/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/view/furama_view/EmployeeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/View/FacilityView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/view/furama_view/FacilityView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/View/FuramaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/view/furama_view/FuramaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/View/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/view/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/View/PromotionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/view/furama_view/PromotionView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study_module2/data/employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study_module2/data/employee.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2IUZBbs4QCTLb9ZXPVbI1y5JoZR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CODEGYM/modele_2/src"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf654353-1f82-4cac-89a8-b2cc7f13377c" name="Changes" comment="" />
+      <created>1670237988175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670237988175</updated>
+      <workItem from="1670237989610" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
