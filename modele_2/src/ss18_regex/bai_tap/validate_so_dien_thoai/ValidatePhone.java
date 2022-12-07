@@ -6,8 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidatePhone {
-    private static final String NUMBER_PHONE = "^\\d+([.]\\d+)?$" +
-            "";
+    private static final String NUMBER_PHONE = "^[A-Z].+";
     private static Pattern pattern;
 
 //    public   ValidatePhone() {

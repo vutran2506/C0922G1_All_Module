@@ -39,7 +39,7 @@ public class Customer extends Person{
     }
 
     public StringBuilder formatCustomer(){
-        return new StringBuilder().append(this.getId()).append(",").append(this.getName()).append(",")
-                .append(this.getDateOfBirth()).append(",").append(this.getSex()).append(",").append(this.getIdNumber());
+
+        return new StringBuilder().append(this.getId()).append(",").append(this.getName()).append(",").append(this.getDateOfBirth()).append(",").append(this.getSex()).append(",").append(this.getIdNumber()).append(",").append(this.getPhone()).append(",").append(this.getEmail()).append(",").append(this.getCustomerType()).append(",").append(this.getAddress());
     }
 }

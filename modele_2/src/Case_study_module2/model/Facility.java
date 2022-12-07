@@ -79,8 +79,8 @@ public abstract class Facility {
                 ", useArea=" + useArea +
                 ", rentCost=" + rentCost +
                 ", maximumNumberOfPeople=" + maximumNumberOfPeople +
-                ", rentType='" + rentType + '\'' +
-                '}';
+                ", rentType='" + rentType + '\''
+                ;
     }
 
     @Override

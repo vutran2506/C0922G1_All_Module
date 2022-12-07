@@ -34,7 +34,7 @@ public class MenuFacilityView {
                         if (validate(Regex.ID_VILLA_REGEX,id)){
                             break;
                         }else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please SVVL-YYYY");
                         }
                     } while (true);
                     System.out.println("Input name Service");
@@ -44,7 +44,7 @@ public class MenuFacilityView {
                         if (validate(Regex.NAME_REGEX,nameServiceVilla)) {
                             break;
                         } else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please input alphabet Yyyyy");
                         }
                     } while (true);
 
@@ -55,7 +55,7 @@ public class MenuFacilityView {
                         if (validate(Regex.USE_AREA, rentCostVillaScenner)) {
                             break;
                         }else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please input number");
                         }
                     } while (true);
                     double useAreaVilla = Double.parseDouble(rentCostVillaScenner);
@@ -66,7 +66,7 @@ public class MenuFacilityView {
                         if (validate(Regex.RENT_COST_REGEX, rentCostVillaScanner)){
                             break;
                         }else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please input number");
                         }
                     }while (true);
                     double rentCostVilla = Double.parseDouble(rentCostVillaScanner);
@@ -78,7 +78,7 @@ public class MenuFacilityView {
                         if (validate(Regex.MAXIMUM_NUMBER_USER_REGEX, maximumOfNumberPeopleVillaScanner)){
                             break;
                         }else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please input number");
                         }
                     }while (true);
                     int maximumOfNumberPeopleVilla = Integer.parseInt(maximumOfNumberPeopleVillaScanner);
@@ -90,7 +90,7 @@ public class MenuFacilityView {
                         if (validate(Regex.RENT_TYPE_REGEX,rentTypeVilla)){
                             break;
                         }else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please alphabet Yyyy");
                         }
                     }while (true);
 
@@ -101,7 +101,7 @@ public class MenuFacilityView {
                          if (validate(Regex.ROOM_STANDARD_REGEX,roomStandardVilla)){
                              break;
                          }else {
-                             System.out.println("Incorrect input,please re-enter");
+                             System.out.println("Incorrect input,please alphabet Xxxx");
                          }
                     }while (true);
 
@@ -112,7 +112,7 @@ public class MenuFacilityView {
                         if (validate(Regex.AREA_POOL_REGEX, poolAreaVillaScanner)){
                             break;
                         }else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please input number");
                         }
                     }while (true);
                     double poolAreaVilla = Double.parseDouble(poolAreaVillaScanner);
@@ -123,7 +123,7 @@ public class MenuFacilityView {
                         if (Pattern.matches(Regex.FLOOR_NUMBER_REGEX,floorNumberVillaScanner)){
                             break;
                         }else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please input number");
                         }
                     }while (true);
                     int floorNumberVilla = Integer.parseInt(floorNumberVillaScanner);
@@ -141,7 +141,7 @@ public class MenuFacilityView {
                         if (validate(Regex.ID_ROOM_REGEX,idRoom)){
                             break;
                         }else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please input SVRO-YYYY");
                         }
                     }while (true);
                     System.out.println("Input name Service");
@@ -151,7 +151,7 @@ public class MenuFacilityView {
                         if (validate(Regex.NAME_REGEX,nameService)){
                             break;
                         }else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please input alphabet Xxxx");
                         }
                     }while (true);
                     System.out.println("Input use area");
@@ -161,7 +161,7 @@ public class MenuFacilityView {
                         if (validate(Regex.USE_AREA,useAreaScanner)){
                             break;
                         }else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please input number");
                         }
                     }while (true);
                     double useArea = Double.parseDouble(useAreaScanner);
@@ -172,7 +172,7 @@ public class MenuFacilityView {
                      if (validate(Regex.RENT_COST_REGEX,renCostScanner)){
                          break;
                      }else {
-                         System.out.println("Incorrect input,please re-enter");
+                         System.out.println("Incorrect input,please input number");
                      }
                     }while (true);
                      double renCost = Double.parseDouble(renCostScanner);
@@ -184,7 +184,7 @@ public class MenuFacilityView {
                         if (validate(Regex.MAXIMUM_NUMBER_USER_REGEX,maximumOfNumberPeopleScanner)){
                             break;
                         }else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please input number");
                         }
                     }while (true);
                     int maximumOfNumberPeople = Integer.parseInt(maximumOfNumberPeopleScanner);
@@ -195,7 +195,7 @@ public class MenuFacilityView {
                         if (validate(Regex.RENT_TYPE_REGEX,rentType)){
                             break;
                         }else {
-                            System.out.println("Incorrect input,please re-enter");
+                            System.out.println("Incorrect input,please input alphabet Xxxx");
                         }
                     }while (true);
                     System.out.println(" Input free service");

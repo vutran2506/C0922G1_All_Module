@@ -1,10 +1,12 @@
 package Case_study_module2.view.furama_view;
 
+import Case_study_module2.common.Regex;
 import Case_study_module2.controller.EmployeeController;
 import Case_study_module2.model.Employee;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class EmployeeView  {
     private final EmployeeController employeeController = new EmployeeController();
@@ -45,7 +47,16 @@ public class EmployeeView  {
                     System.out.println("Input name Employee");
                     String name = scanner.nextLine();
                     System.out.println("Input date of birth Employee");
-                    String dateOfBirth = scanner.nextLine();
+                    String dateOfBirth;
+                    do {
+                        dateOfBirth = scanner.nextLine();
+                        if (validate(Regex.DATE_FORMAT,dateOfBirth)){
+                            break;
+                        }else {
+                            System.out.println("Format by dd/mm/YYYY ");
+                        }
+                    }while (true);
+
                     System.out.println("Input sex Employee");
                     String sex = scanner.nextLine();
                     System.out.println("Input id number Employee");
@@ -100,5 +111,8 @@ public class EmployeeView  {
                     System.out.println("Input choice 1 to 5");
             }
         } while (true);
+    }
+    public static boolean validate(String regex, String input) {
+        return Pattern.matches(regex, input);
     }
 }

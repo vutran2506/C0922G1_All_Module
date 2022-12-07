@@ -6,6 +6,7 @@ import Case_study_module2.sirvice.interface_customer.IOCustomerService;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class CustomerServiceImpl implements ICustomerService {
     private static final String FILE_CUSTOMER = "src/Case_study_module2/data/customer.csv";
@@ -45,5 +46,8 @@ public class CustomerServiceImpl implements ICustomerService {
             System.out.println(" Id not Exist");
         }
         this.ioCustomerService.writeFileCustomer(FILE_CUSTOMER,customerList);
+    }
+    public static boolean validate(String regex, String input) {
+        return Pattern.matches(regex, input);
     }
 }

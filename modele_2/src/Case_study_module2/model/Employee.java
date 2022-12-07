@@ -49,9 +49,8 @@ public class Employee extends Person {
     }
 
     public StringBuilder formatEmployee() {
-        return new StringBuilder(this.getId() + "," + getName() + "," + this.getDateOfBirth() + "," + this.getSex() + ","
-                        + this.getIdNumber() + "," + this.getPhone() + "," + this.getEmail() + "," +
-                        this.getLevel() + "," + this.getPosition() + "," + this.getSalary());
 
+return new StringBuilder().append(this.getId()).append(",").append(getName()).append(",").append(this.getDateOfBirth()).append(",").append(this.getSex()).append(",").append(this.getIdNumber()).append(",").append(this.getPhone()).append(",").append(this.getEmail()).append(",").append(this.getLevel())
+        .append(",").append(this.getPosition()).append(",").append(this.getSalary());
     }
 }
