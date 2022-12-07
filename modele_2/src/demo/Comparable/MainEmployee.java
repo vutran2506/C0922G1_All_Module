@@ -2,6 +2,7 @@ package demo.Comparable;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class MainEmployee {
@@ -15,9 +16,15 @@ public class MainEmployee {
         employeeList.add(employee2);
         employeeList.add(employee3);
         employeeList.add(employee4);
-//
+////
 //        Collections.sort(employeeList);
-        Collections.sort(employeeList,new IComparator());
+        Comparator<Employee> employeeComparator = new Comparator<Employee>() {
+            @Override
+            public int compare(Employee o1, Employee o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+        };
+        Collections.sort(employeeList,employeeComparator);
         System.out.println(employeeList);
     }
 }

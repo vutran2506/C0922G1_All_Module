@@ -8,15 +8,8 @@ public class Villa extends Facility {
     public Villa() {
     }
 
-    public Villa(String roomStandard, double poolArea, int floorNumber) {
-        this.roomStandard = roomStandard;
-        this.poolArea = poolArea;
-        this.floorNumber = floorNumber;
-    }
-
-    public Villa(String nameService, double useArea, double rentCost, int maximumNumberOfPeople, String rentType,
-                 String roomStandard, double poolArea, int floorNumber) {
-        super(nameService, useArea, rentCost, maximumNumberOfPeople, rentType);
+    public Villa(String id, String nameService, double useArea, double rentCost, int maximumNumberOfPeople, String rentType, String roomStandard, double poolArea, int floorNumber) {
+        super(id, nameService, useArea, rentCost, maximumNumberOfPeople, rentType);
         this.roomStandard = roomStandard;
         this.poolArea = poolArea;
         this.floorNumber = floorNumber;
@@ -48,14 +41,16 @@ public class Villa extends Facility {
 
     @Override
     public String toString() {
-        return "Villa{"+ super.toString() +
-                "tieuChuanPhong='" + roomStandard + '\'' +
-                ", dienTichHoBoi=" + poolArea +
-                ", soTang=" + floorNumber +
+        return "Villa{" +super.toString()+
+                "roomStandard='" + roomStandard + '\'' +
+                ", poolArea=" + poolArea +
+                ", floorNumber=" + floorNumber +
                 '}';
     }
+
+
     public StringBuilder formatVilla(){
-        return new StringBuilder(this.getNameService()+","+this.getUseArea()+","+this.getRentCost()+","+this.getMaximumNumberOfPeople()
+        return new StringBuilder(this.getId()+","+this.getNameService()+","+this.getUseArea()+","+this.getRentCost()+","+this.getMaximumNumberOfPeople()
         +","+this.getRentType()+","+this.roomStandard+","+this.poolArea+","+this.floorNumber);
     }
 }

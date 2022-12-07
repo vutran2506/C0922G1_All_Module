@@ -20,9 +20,9 @@ public class IOVillaServiceImpl implements IOFacility<Villa,Integer> {
         String line;
         while ((line = bufferedReader.readLine())!= null){
             String [] arr = line.split(",");
-            Villa villa = new Villa(arr[0],Double.parseDouble(arr[1]),Double.parseDouble(arr[2]),Integer.parseInt(arr[3]),
-                    arr[4],arr[5],Double.parseDouble(arr[6]),Integer.parseInt(arr[7]));
-            villaList.put(villa,Integer.parseInt(arr[8]));
+            Villa villa = new Villa(arr[0],arr[1],Double.parseDouble(arr[2]),Double.parseDouble(arr[3]),Integer.parseInt(arr[4]),
+                    arr[5],arr[6],Double.parseDouble(arr[7]),Integer.parseInt(arr[8]));
+            villaList.put(villa,Integer.parseInt(arr[9]));
         }
         bufferedReader.close();
         return villaList;

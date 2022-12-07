@@ -1,6 +1,9 @@
 package Case_study_module2.model;
 
+import java.util.Objects;
+
 public abstract class Facility {
+    private String id;
     private String nameService;
     private double useArea;
     private double rentCost;
@@ -10,13 +13,22 @@ public abstract class Facility {
     public Facility() {
     }
 
-    public Facility(String nameService, double useArea, double rentCost, int maximumNumberOfPeople,
-                    String rentType) {
+    public Facility(String id, String nameService, double useArea,
+                    double rentCost, int maximumNumberOfPeople, String rentType) {
+        this.id = id;
         this.nameService = nameService;
         this.useArea = useArea;
         this.rentCost = rentCost;
         this.maximumNumberOfPeople = maximumNumberOfPeople;
         this.rentType = rentType;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getNameService() {
@@ -62,11 +74,25 @@ public abstract class Facility {
     @Override
     public String toString() {
         return
-                "nameService='" + nameService + '\'' +
+                "id='" + id + '\'' +
+                ", nameService='" + nameService + '\'' +
                 ", useArea=" + useArea +
                 ", rentCost=" + rentCost +
                 ", maximumNumberOfPeople=" + maximumNumberOfPeople +
                 ", rentType='" + rentType + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Facility facility = (Facility) o;
+        return Objects.equals(id, facility.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

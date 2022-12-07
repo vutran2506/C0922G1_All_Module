@@ -23,9 +23,9 @@ public class IORoomServiceImpl implements IOFacility<Room, Integer> {
         String line = null;
         while ((line = bufferedReader.readLine()) != null) {
             String[] arr = line.split(",");
-            Room room = new Room(arr[0], Double.parseDouble(arr[1]), Double.parseDouble(arr[2]), Integer.parseInt(arr[3])
-                    , arr[4], arr[5]);
-            roomList.put(room,Integer.parseInt(arr[6]));
+            Room room = new Room(arr[0],arr[1], Double.parseDouble(arr[2]), Double.parseDouble(arr[3]), Integer.parseInt(arr[4])
+                    , arr[5], arr[6]);
+            roomList.put(room,Integer.parseInt(arr[7]));
         }
         bufferedReader.close();
         return roomList;
