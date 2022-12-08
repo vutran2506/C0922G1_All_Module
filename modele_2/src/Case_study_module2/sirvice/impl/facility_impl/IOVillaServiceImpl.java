@@ -35,8 +35,7 @@ public class IOVillaServiceImpl implements IOFacility<Villa,Integer> {
             file.createNewFile();
         }
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(path));
-        Set<Map.Entry<Villa,Integer>> setVillaList = mapList.entrySet();
-        for (Map.Entry<Villa,Integer> mapVilla: setVillaList) {
+        for (Map.Entry<Villa,Integer> mapVilla: mapList.entrySet()) {
             bufferedWriter.write(mapVilla.getKey().formatVilla().toString()+","+mapVilla.getValue());
             bufferedWriter.newLine();
         }

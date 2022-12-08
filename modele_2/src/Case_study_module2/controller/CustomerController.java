@@ -31,5 +31,14 @@ public class CustomerController {
             System.out.println(e.getMessage());
         }
     }
+    public boolean checkId(int id){
+        try {
+            return customerService.checkId(id);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
+
+    }
 
 }

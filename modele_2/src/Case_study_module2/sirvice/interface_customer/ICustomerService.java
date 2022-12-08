@@ -10,5 +10,5 @@ public interface ICustomerService {
     List<Customer> getCustomer() throws IOException;
 
     void editCustomer(Customer customer) throws IOException;
-
+    public boolean checkId(int id) throws IOException;
 }

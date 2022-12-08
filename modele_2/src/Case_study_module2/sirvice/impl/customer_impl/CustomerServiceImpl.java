@@ -50,4 +50,13 @@ public class CustomerServiceImpl implements ICustomerService {
     public static boolean validate(String regex, String input) {
         return Pattern.matches(regex, input);
     }
+    public boolean checkId(int id) throws IOException {
+        List<Customer> customerList = this.ioCustomerService.readFileCustomer(FILE_CUSTOMER);
+        for (Customer cus: customerList) {
+            if (id == cus.getId()){
+                return true;
+            }
+        }
+        return false;
+    }
 }

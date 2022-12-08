@@ -11,7 +11,6 @@ import java.util.Set;
 
 public class IORoomServiceImpl implements IOFacility<Room, Integer> {
 
-
     @Override
     public Map<Room, Integer> readFiles(String path) throws IOException {
         Map<Room, Integer> roomList = new LinkedHashMap<>();
